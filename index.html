@@ -10,7 +10,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;700&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
 <style>
 :root{
   --void:#0d1215;--ink:#ece8e0;--muted:#a9a69e;--soft:#d3cfc6;--brass:#c9a56e;--brass-2:#e2c592;
@@ -409,7 +409,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
   </nav>
   <button class="btn-glass glass pill menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
 </header>
-<div class="menu glass" id="menu">
+<div class="menu glass" id="menu" data-lenis-prevent>
   <a href="#/construction">Construction</a>
   <a href="#/materials">Material contracts</a>
   <a href="#/interiors">Interiors</a>
@@ -453,7 +453,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
   <p class="sr" id="beat-sr" aria-live="polite"></p>
 </div>
 
-<div class="explore" id="explore">
+<div class="explore" id="explore" data-lenis-prevent>
   <div class="ex-card glass" role="region" aria-label="Explore the house">
     <p class="ex-hint">Drag to walk around the house. Scroll or pinch to move closer.</p>
     <div class="ex-group" role="group" aria-label="Light">
@@ -582,12 +582,12 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
   </footer>
 </main>
 
-<div class="sub" id="sub" aria-label="Detail page">
-  <div class="sub-scroll" id="sub-scroll"><div id="sub-content"></div></div>
+<div class="sub" id="sub" aria-label="Detail page" data-lenis-prevent>
+  <div class="sub-scroll" id="sub-scroll" data-lenis-prevent><div id="sub-content"></div></div>
   <div class="dock glass" id="dock" aria-live="polite"><div class="dk"><p class="p-meta"><span class="n" id="dock-n"></span><span id="dock-t"></span></p><h2 id="dock-h"></h2><p class="db" id="dock-b"></p><p class="dt" id="dock-g"></p><button class="dock-more" id="dock-more" type="button">More</button></div></div>
 </div>
 <div class="labels" id="labels" aria-hidden="true"></div>
-<div class="sub-tools glass pill" id="sub-tools"></div>
+<div class="sub-tools glass pill" id="sub-tools" data-lenis-prevent></div>
 <div class="sub-prog" id="sub-prog" aria-hidden="true"></div>
 <div class="sub-loading" id="sub-loading">Preparing the model</div>
 
@@ -1341,9 +1341,31 @@ function buildMain(){
     [.725,[8,7,36],[0,6,-30],2],[.785,[-6,7.5,38],[0,7,-30],2],[.835,[4,5.5,30],[0,3.8,0],0],
     [.9,[-20,6.5,27],[-1,3.2,0],0],[1,[-24,8,30],[-1,3.4,0],0]
   ];
+  S.statGroup=new THREE.Group();scene.add(S.statGroup);
+  S.stats=[{a:.728,b:.782,k:'Projects delivered, and still counting',n:'10,000',suf:'+'},{a:.786,b:.838,k:'Building it the same way for',n:'25',suf:'+ years'}].map(function(b){var g=makeStat(b);S.statGroup.add(g);return g;});
   buildK();
   S.pos=new THREE.Vector3();S.tgt=new THREE.Vector3();S.vx=0;S.vy=0;S.focusV=new THREE.Vector3(3,3.5,1);
   S.frame=0;S.v1=new THREE.Vector3();S.v2=new THREE.Vector3(18,26,14);
+}
+function makeStat(b){
+  var cw=2048,ch=512,c=document.createElement('canvas'),x=c.getContext('2d');c.width=cw;c.height=ch;
+  x.font='700 100px Jost, sans-serif';var r=(x.measureText(b.n).width+x.measureText(b.suf).width+8)/100,NP=Math.min(360,(cw-160)/r),KP=Math.round(Math.max(48,NP*.16));
+  function draw(g,sc,glow){g.save();g.scale(sc,sc);
+    g.font='700 '+NP+'px Jost, sans-serif';var nw=g.measureText(b.n).width,sw=g.measureText(b.suf).width,x0=(cw-(nw+sw+8))/2,base=ch-60;
+    g.textAlign='left';if(glow){g.shadowColor='rgba(255,186,108,1)';g.shadowBlur=glow;}
+    g.fillStyle=glow?'rgba(255,214,160,.95)':'#f8f2e7';g.fillText(b.n,x0,base);g.fillStyle=glow?'rgba(255,190,110,.95)':'#d9ad6a';g.fillText(b.suf,x0+nw+8,base);
+    g.font='400 '+KP+'px Jost, sans-serif';g.textAlign='center';g.fillStyle=glow?'rgba(255,200,140,.7)':'#e8cf9f';g.fillText(b.k,cw/2,base-NP*.86);g.restore();}
+  draw(x,1,0);
+  var gc=document.createElement('canvas');gc.width=512;gc.height=128;var gx=gc.getContext('2d');draw(gx,.25,22);draw(gx,.25,10);
+  var tex=new THREE.CanvasTexture(c);tex.encoding=THREE.sRGBEncoding;tex.premultiplyAlpha=true;tex.anisotropy=ANISO;
+  var gt=new THREE.CanvasTexture(gc);gt.encoding=THREE.sRGBEncoding;
+  var core=new THREE.MeshBasicMaterial({map:tex,transparent:true,depthWrite:false,toneMapped:false,fog:false});
+  core.blending=THREE.CustomBlending;core.blendSrc=THREE.OneFactor;core.blendDst=THREE.OneMinusSrcAlphaFactor;
+  core.onBeforeCompile=function(sh){sh.fragmentShader=sh.fragmentShader.replace('#include <map_fragment>','vec4 nkT=texture2D(map,vUv);diffuseColor=vec4(diffuse*nkT.rgb*opacity,nkT.a*opacity);');};
+  var halo=new THREE.MeshBasicMaterial({map:gt,transparent:true,depthWrite:false,toneMapped:false,fog:false,blending:THREE.AdditiveBlending});
+  var geo=new THREE.PlaneGeometry(1,ch/cw),g=new THREE.Group(),hm=new THREE.Mesh(geo,halo),cm=new THREE.Mesh(geo,core);
+  hm.scale.set(1.08,1.08,1);hm.renderOrder=21;cm.renderOrder=22;hm.frustumCulled=cm.frustumCulled=false;g.add(hm);g.add(cm);g.visible=false;
+  g.userData={b:b,core:core,halo:halo};return g;
 }
 function buildK(){
   var half=THREE.MathUtils.degToRad(S.baseFov/2),asp=innerWidth/innerHeight;
@@ -1488,17 +1510,29 @@ function updateScene(p,time,vel,stage,OV){
   camera.fov=fovT;
   camera.setViewOffset(W,H,S.vx*W,S.vy*H,W,H);
   camera.updateMatrixWorld();
+  /* the numbers stand among the city blocks, rise from behind the rooftops and glow with the scroll */
+  var hd0=camera.position.distanceTo(S.focusV),statFocus=0;
+  for(i=0;i<S.stats.length;i++){var sg=S.stats[i],sb=sg.userData.b,tt=(p-sb.a)/(sb.b-sb.a);
+    if(OV||EX.on||tt<=0||tt>=1){sg.visible=false;continue;}
+    var s_in=eo(seg(tt,0,.24)),s_out=eio(seg(tt,.8,1)),s_vis=s_in*(1-s_out),s_glow=Math.sin(Math.PI*seg(tt,.1,.9));
+    var D=hd0+60,vh2=2*D*Math.tan(THREE.MathUtils.degToRad(camera.fov/2)),vw2=vh2*(W/H),Wt=vw2*(MOBILE?.94:.8),Ht=Wt*.25,hTop=camera.position.y+(8.7-camera.position.y)*D/Math.max(1,hd0),bot=Math.max(3,hTop-Ht*.16);
+    var fwd=S.v3a.set(0,0,-1).applyQuaternion(camera.quaternion);fwd.y=0;fwd.normalize();
+    sg.position.copy(camera.position).addScaledVector(fwd,D);sg.position.y=bot+Ht*.4-(1-s_in)*Ht*.45+s_out*Ht*.12;
+    sg.quaternion.copy(camera.quaternion);sg.scale.set(Wt,Wt,1);sg.visible=s_vis>.002;
+    sg.userData.core.opacity=s_vis;sg.userData.core.color.setScalar(1+(composer?.7:1.5)*s_glow);sg.userData.halo.opacity=s_vis*s_glow*(composer?.3:.9);
+    statFocus=Math.max(statFocus,s_vis);S.statD2=D;}
+  S.statFocus=statFocus;
 
   if(p>.315&&(S.forceCube||S.frame%S.cubeEvery===0)&&(S.forceCube||S.cubeDirty||Math.abs(p-S.cubeP)>.0015||EX.on||(p>.665&&S.frame%(S.cubeEvery*3)===0))){
     var gv=M.glass.visible,wv=M.water.visible,cv=S.carBody.material.visible,dv=S.dust.visible,c1=S.car1.visible;
-    M.glass.visible=false;M.water.visible=false;S.carBody.material.visible=false;S.dust.visible=false;S.car1.visible=false;S.textGroup.visible=false;
+    M.glass.visible=false;M.water.visible=false;S.carBody.material.visible=false;S.dust.visible=false;S.car1.visible=false;S.textGroup.visible=false;S.statGroup.visible=false;
     S.cubeCam.update(renderer,scene);
-    M.glass.visible=gv;M.water.visible=wv;S.carBody.material.visible=cv;S.dust.visible=dv;S.car1.visible=c1;S.textGroup.visible=true;
+    M.glass.visible=gv;M.water.visible=wv;S.carBody.material.visible=cv;S.dust.visible=dv;S.car1.visible=c1;S.textGroup.visible=true;S.statGroup.visible=true;
     S.cubeP=p;S.cubeDirty=false;S.forceCube=false;
   }
   if(bokeh){var dof=Q.bokeh&&!OV&&(p>.69||EX.on);bokeh.enabled=dof;
-    if(dof){bokeh.uniforms.focus.value=camera.position.distanceTo(S.focusV);bokeh.uniforms.aperture.value=.0005*(EX.on?1:seg(p,.69,.73));bokeh.uniforms.maxblur.value=.045;}}
-  if(bloom)bloom.strength=lerp(.35,.75,Math.max(lamp,golden*skyT));
+    if(dof){bokeh.uniforms.focus.value=lerp(camera.position.distanceTo(S.focusV),S.statD2||150,S.statFocus||0);bokeh.uniforms.aperture.value=.0005*(EX.on?1:seg(p,.69,.73));bokeh.uniforms.maxblur.value=.045;}}
+  if(bloom)bloom.strength=lerp(lerp(.35,.75,Math.max(lamp,golden*skyT)),.5,S.statFocus||0);
   renderWith(scene,camera);
 }
 
@@ -1869,8 +1903,8 @@ function updateCaptions(p){
   if(i<0){capBox.style.opacity=0;capBox.style.visibility='hidden';statEl.style.opacity=0;statEl.style.visibility='hidden';return;}
   if(!PV)PV=new THREE.Vector3();
   var c=CAPS[i],t=(p-c.a)/(c.b-c.a),tin=eo(seg(t,0,.22)),tout=eio(seg(t,.82,1)),vis=tin*(1-tout),draw=eo(seg(t,.02,.3))*(1-tout),now=performance.now()*.001,A,B,b,d;
-  if(c.t==='stat'){
-    capBox.style.opacity=0;capBox.style.visibility='hidden';
+  if(c.t==='stat'){ // the numbers are drawn in the 3D scene now
+    capBox.style.opacity=0;capBox.style.visibility='hidden';statEl.style.opacity=0;statEl.style.visibility='hidden';return;
     var nv=Math.round(eo(seg(t,.04,.5))*c.n);statN.innerHTML=nv.toLocaleString('en-IN')+'<em>'+c.suf+'</em>';
     statEl.style.visibility='visible';statEl.style.opacity=vis;
     statEl.style.transform='translate(-50%,-50%) scale('+(lerp(1.06,1,tin)*lerp(1,.95,tout)).toFixed(4)+')';statEl.style.filter='blur('+((1-tin)*10+tout*12).toFixed(1)+'px)';return;}
@@ -1972,7 +2006,7 @@ addEventListener('resize',function(){measure();if(!gl)return;renderer.setSize(in
 /* ================= loader ================= */
 if(TEST)window.__nkInfo=function(){return gl?JSON.stringify({calls:S.lastInfo&&S.lastInfo.calls,tris:S.lastInfo&&S.lastInfo.tris,pr:renderer.getPixelRatio(),tier:TIER,composer:!!composer,shadows:renderer.shadowMap.enabled}):'nogl';};
 var ldc=$('#ld-count'),ldb=$('#ld-bar'),ld=$('#loader'),ldv=0,built=false,ldLast=performance.now();
-Promise.race([document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve(),new Promise(function(r){setTimeout(r,2600);})]).then(function(){
+Promise.race([Promise.all([document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve(),document.fonts&&document.fonts.load?document.fonts.load('700 100px Jost').catch(function(){}):Promise.resolve()]),new Promise(function(r){setTimeout(r,2600);})]).then(function(){
   try{gl=initGL();}catch(e){gl=false;if(window.console)console.error(e);}
   if(!gl)root.classList.add('no-gl');
   else{try{[.15,.27,.34,.4,.47,.56,.62,.7,.75,.9,0].forEach(function(pp){S.forceCube=pp>.32;updateScene(pp,0,0,stageOf(pp),null);});}catch(e){if(window.console)console.error(e);}}
