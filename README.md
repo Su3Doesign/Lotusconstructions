@@ -53,4 +53,8 @@ repository private or ask GitHub Support to purge it.
 - `assets/work/` holds the renders, the site photographs (Apple Hospitals, Devanshika Homes), the presentation
   boards with their road and aerial views, and the redrawn Noble elevation, all in WebP.
 - `assets/tex/` holds the Ganesha and flowering-tree motifs, cut from the renders and used on the 3D models.
+- `assets/brand/` holds the logo: a lotus with the NK letters standing as a corner building in perspective.
+  `logo-gold.svg` is for light backgrounds, `logo-dark.svg` and `logo-dark-bold.svg` (heavier lines, for small sizes)
+  are for dark ones, and `mark-gold.svg` is the simplified mark used in the header. `icon-512.png` is the app icon.
+- `favicon.svg`, `favicon.ico` and `apple-touch-icon.png` in the root are the browser and home-screen icons.
 - `assets/og.jpg` is the preview image shown when a link to the site is shared.

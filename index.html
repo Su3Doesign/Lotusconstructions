@@ -16,8 +16,10 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='10' fill='%230d1215'/%3E%3Crect x='1.5' y='1.5' width='41' height='41' rx='9' fill='none' stroke='%23C9A56E' stroke-width='1.5'/%3E%3Cpath d='M11 33V11l11 22V11M26 11v22M26 22l9-11M29 18l6 15' fill='none' stroke='%23C9A56E' stroke-width='2'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Lotus Constructions","alternateName":"Lotus Planners & Constructions","url":"https://lotusconstructions.in/","image":"https://lotusconstructions.in/assets/og.jpg","telephone":"+91-94403-40894","email":"nareshamidyala@gmail.com","founder":{"@type":"Person","name":"A. Naresh Kumar","jobTitle":"Civil Engineer"},"areaServed":"Hyderabad","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"}}</script>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Lotus Constructions","alternateName":"Lotus Planners & Constructions","url":"https://lotusconstructions.in/","logo":"https://lotusconstructions.in/assets/brand/icon-512.png","image":"https://lotusconstructions.in/assets/og.jpg","telephone":"+91-94403-40894","email":"nareshamidyala@gmail.com","founder":{"@type":"Person","name":"A. Naresh Kumar","jobTitle":"Civil Engineer"},"areaServed":"Hyderabad","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"}}</script>
 <script>
 (function(){var m=matchMedia('(hover: none), (pointer: coarse)').matches||innerWidth<820;document.documentElement.classList.add(m?'m':'d');})();
 </script>
@@ -65,6 +67,15 @@ button{font-family:inherit}
 #loader{position:fixed;inset:0;z-index:100;background:var(--void);display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--gut) calc(clamp(40px,8vh,90px) + env(safe-area-inset-bottom,0px));clip-path:inset(0 0 0 0);transition:clip-path 1.2s cubic-bezier(.7,0,.2,1)}
 #loader.done{clip-path:inset(0 0 100% 0)}
 .ld-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.ld-logo{position:absolute;left:50%;top:44%;width:clamp(170px,22vw,280px);height:auto;transform:translate(-50%,-50%);overflow:visible}
+.ld-logo path[pathLength]{stroke-dasharray:1;stroke-dashoffset:1;animation:ldraw 1.05s cubic-bezier(.3,.1,.2,1) forwards}
+.ld-logo path[fill]:not([fill="none"]){opacity:0;animation:lfade .7s .45s forwards}
+.ld-logo>path:nth-of-type(n+5){animation-delay:.08s}.ld-logo>path:nth-of-type(n+8){animation-delay:.4s}
+.ld-logo>path:nth-of-type(n+11){animation-delay:.62s;animation-duration:.8s}.ld-logo>path:nth-of-type(n+15){animation-delay:.22s;animation-duration:1s}
+@keyframes ldraw{to{stroke-dashoffset:0}}@keyframes lfade{to{opacity:1}}
+.m .ld-logo{top:40%}
+.brand-mark{display:block;flex:0 0 auto}
+.ft-logo{display:block;width:150px;height:auto;margin-bottom:16px}
 .ld-name{font-family:var(--serif);font-size:clamp(20px,2vw,28px);letter-spacing:.14em}
 .ld-note{color:var(--muted);font-size:15px;margin-top:8px}
 .ld-count{font-family:var(--serif);font-size:clamp(64px,12vw,200px);line-height:.85;font-variant-numeric:tabular-nums}
@@ -292,6 +303,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
   *{animation:none!important}
   .w>span,.hero-name .c,.p-body,.stats,.swatches,.hero-row p,.rv,.sub-card,.panel{transition:none!important}
   .sig{transition:none}
+  .ld-logo path[pathLength]{stroke-dashoffset:0;animation:none}.ld-logo path[fill]:not([fill="none"]){opacity:1;animation:none}
 }
 /* v4: story told in 3D, only a quiet finale in HTML */
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -555,6 +567,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
 </head>
 <body>
 <div id="loader" aria-hidden="true">
+  <svg class="ld-logo" aria-hidden="true" viewBox="-5 0 900 820"><path pathLength="1" d="M218 730 C150 660 60 560 6 420 C80 440 150 478 210 518" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M 672.0 730.0 C 740.0 660.0 830.0 560.0 884.0 420.0 C 810.0 440.0 740.0 478.0 680.0 518.0" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M218 730 C170 600 140 470 108 305 C180 350 240 400 290 450" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M 672.0 730.0 C 720.0 600.0 750.0 470.0 782.0 305.0 C 710.0 350.0 650.0 400.0 600.0 450.0" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M445 12 C372 140 300 250 262 330 C236 385 226 420 226 470 L226 730" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M 445.0 12.0 C 518.0 140.0 590.0 250.0 628.0 330.0 C 654.0 385.0 664.0 420.0 664.0 470.0 L 664.0 730.0" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M445 12 L445 350.0" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M445 205 C400 265 345 335 303 395 C296 405 298 410 300 412" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M 445.0 205.0 C 490.0 265.0 545.0 335.0 587.0 395.0 C 594.0 405.0 592.0 410.0 590.0 412.0" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M1 731.5 Q445 725 889 731.5 Q445 738 1 731.5 Z" fill="#C9A56E"/><clipPath id="ldN"><path pathLength="1" d="M270.0 487.4 L312.6 454.0 L377.8 649.8 L377.8 402.8 L445.0 350.0 L445.0 730.0 L365.8 727.4 L304.2 524.1 L304.2 725.5 L270.0 724.4 Z"/></clipPath><clipPath id="ldK"><path pathLength="1" d="M445.0 350.0 L516.3 405.9 L516.3 534.6 L577.4 454.0 L616.7 484.8 L547.7 569.8 L620.0 724.4 L581.7 725.6 L518.3 606.0 L516.3 640.8 L516.3 727.7 L445.0 730.0 Z"/></clipPath><path pathLength="1" d="M259.5 528.3L474.9 384.4 M259.5 560.9L474.9 442.2 M259.5 593.6L474.9 500.0 M259.5 626.0L474.9 557.5 M259.5 658.7L474.9 615.3 M259.5 691.4L474.9 673.1" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="2.70" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ldN)"/><path pathLength="1" d="M415.1 384.4L630.5 528.3 M415.1 442.2L630.5 560.9 M415.1 500.0L630.5 593.6 M415.1 557.5L630.5 626.0 M415.1 615.3L630.5 658.7 M415.1 673.1L630.5 691.4" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="2.70" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ldK)"/><path pathLength="1" d="M286.1 449.7L286.1 749.9 M408.8 343.4L408.8 763.9" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="2.70" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ldN)"/><path pathLength="1" d="M483.6 345.5L483.6 763.6" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="2.70" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ldK)"/><path pathLength="1" d="M270.0 487.4 L312.6 454.0 L377.8 649.8 L377.8 402.8 L445.0 350.0 L445.0 730.0 L365.8 727.4 L304.2 524.1 L304.2 725.5 L270.0 724.4 Z" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M445.0 350.0 L516.3 405.9 L516.3 534.6 L577.4 454.0 L616.7 484.8 L547.7 569.8 L620.0 724.4 L581.7 725.6 L518.3 606.0 L516.3 640.8 L516.3 727.7 L445.0 730.0 Z" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <div class="ld-row">
     <div><div class="ld-name">Naresh Kumar</div><div class="ld-note">Clearing the site</div></div>
     <div class="ld-count" id="ld-count">000</div>
@@ -569,7 +582,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
 <header class="hud">
   <a class="skip" href="#services">Skip the build</a>
   <a class="brand glass pill" href="#top" aria-label="Naresh Kumar, back to start">
-    <svg width="34" height="34" viewBox="0 0 44 44" fill="none" aria-hidden="true"><rect x="1" y="1" width="42" height="42" rx="10" stroke="#C9A56E" stroke-width="1.2"/><path d="M11 33V11l11 22V11M26 11v22M26 22l9-11M29 18l6 15" stroke="#C9A56E" stroke-width="1.4"/></svg>
+    <svg class="brand-mark" width="40" height="41" aria-hidden="true" viewBox="65 0 760 780"><path d="M445 30 C372 150 300 250 262 330 C238 382 228 420 228 470 L228 730" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M 445.0 30.0 C 518.0 150.0 590.0 250.0 628.0 330.0 C 652.0 382.0 662.0 420.0 662.0 470.0 L 662.0 730.0" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M200 730 C160 600 135 470 100 310 C160 350 200 380 226 405" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M 690.0 730.0 C 730.0 600.0 755.0 470.0 790.0 310.0 C 730.0 350.0 690.0 380.0 664.0 405.0" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M445 30 L445 300" fill="none" stroke="#C9A56E" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><path d="M258.0 413.9 L315.2 388.2 L369.8 623.0 L369.8 363.7 L436.7 333.7 L436.7 729.9 L360.0 728.8 L306.7 489.5 L306.7 728.1 L258.0 727.4 Z M453.3 333.7 L524.1 365.5 L524.1 510.9 L578.2 389.8 L629.1 412.6 L548.0 541.8 L632.0 727.4 L583.3 728.1 L517.2 589.7 L524.1 634.4 L524.1 728.9 L453.3 729.9 Z" fill="#C9A56E"/><path d="M100 736 L790 736" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <span>Naresh Kumar</span><em>LOTUS</em>
   </a>
   <nav class="glass pill" aria-label="Main">
@@ -745,7 +758,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
   </section>
 
   <footer class="ft">
-    <div><div class="fsig" aria-hidden="true">Naresh Kumar</div><div style="margin-top:10px">Civil engineering, construction, material contracts and interiors. Hyderabad.</div><div class="lotus">LOTUS · PLANNERS &amp; CONSTRUCTIONS</div></div>
+    <div><img class="ft-logo" src="assets/brand/logo-dark-bold.svg" alt="Lotus Planners &amp; Constructions" width="150" height="137" loading="lazy"><div class="fsig" aria-hidden="true">Naresh Kumar</div><div style="margin-top:10px">Civil engineering, construction, material contracts and interiors. Hyderabad.</div><div class="lotus">LOTUS · PLANNERS &amp; CONSTRUCTIONS</div></div>
     <nav class="ft-links" aria-label="Footer"><a href="#/portfolio">Portfolio</a><a href="#/construction">Construction</a><a href="#/materials">Materials</a><a href="#/interiors">Interiors</a><a href="#contact">Contact</a></nav>
     <div>© 2026 Naresh Kumar · Lotus Constructions</div>
     <a href="#top">Back to the beginning</a>
@@ -3140,7 +3153,7 @@ Promise.race([Promise.all([document.fonts&&document.fonts.ready?document.fonts.r
   var now=performance.now(),el=now-t0,dt=Math.min(now-ldLast,200),target=built?100:Math.min(88,el/16);ldLast=now;
   ldv+=(target-ldv)*(1-Math.pow(.93,dt/16.7));if(target===100&&ldv>99.5)ldv=100;
   ldc.textContent=String(Math.round(ldv)).padStart(3,'0');ldb.style.transform='scaleX('+(ldv/100)+')';
-  if(ldv<100||el<1500){requestAnimationFrame(tick);return;}
+  if(ldv<100||el<1750){requestAnimationFrame(tick);return;}
   ld.classList.add('done');root.classList.add('ready');started=true;feedWork();if(lenis&&!ROUTE)lenis.start();
   setTimeout(function(){if(ld.parentNode)ld.parentNode.removeChild(ld);},1400);
 })();
