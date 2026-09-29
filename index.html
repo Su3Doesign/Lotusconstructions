@@ -4,20 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Naresh Kumar · Lotus Constructions | Civil Engineer, Contractor, Interiors, Hyderabad</title>
-<meta name="description" content="A. Naresh Kumar and Lotus Planners &amp; Builders, Hyderabad: civil engineering, construction and material contracts, and in-house interiors. 25+ years, 10,000+ projects. Walk our work in 3D.">
+<meta name="description" content="A. Naresh Kumar and Lotus Planners &amp; Constructions, Hyderabad: civil engineering, construction and material contracts, and in-house interiors. 25+ years, 10,000+ projects. Walk our work in 3D.">
 <link rel="canonical" href="https://lotusconstructions.in/">
 <meta name="theme-color" content="#0d1215">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Lotus Constructions">
 <meta property="og:title" content="Naresh Kumar · Lotus Constructions">
-<meta property="og:description" content="Civil engineer and contractor, Hyderabad. Watch a house being built from bare ground, then walk a street of our real projects in 3D.">
+<meta property="og:description" content="Civil engineer and contractor, Hyderabad. Watch a house being built from bare ground, then walk a street of our real homes, church, hospital and school in 3D.">
 <meta property="og:url" content="https://lotusconstructions.in/">
 <meta property="og:image" content="https://lotusconstructions.in/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='10' fill='%230d1215'/%3E%3Crect x='1.5' y='1.5' width='41' height='41' rx='9' fill='none' stroke='%23C9A56E' stroke-width='1.5'/%3E%3Cpath d='M11 33V11l11 22V11M26 11v22M26 22l9-11M29 18l6 15' fill='none' stroke='%23C9A56E' stroke-width='2'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Lotus Constructions","alternateName":"Lotus Planners & Builders","url":"https://lotusconstructions.in/","image":"https://lotusconstructions.in/assets/og.jpg","telephone":"+91-94403-40894","founder":{"@type":"Person","name":"A. Naresh Kumar","jobTitle":"Civil Engineer"},"areaServed":"Hyderabad","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"}}</script>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Lotus Constructions","alternateName":"Lotus Planners & Constructions","url":"https://lotusconstructions.in/","logo":"https://lotusconstructions.in/assets/brand/icon-512.png","image":"https://lotusconstructions.in/assets/og.jpg","telephone":"+91-94403-40894","email":"nareshamidyala@gmail.com","founder":{"@type":"Person","name":"A. Naresh Kumar","jobTitle":"Civil Engineer"},"areaServed":"Hyderabad","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"}}</script>
 <script>
 (function(){var m=matchMedia('(hover: none), (pointer: coarse)').matches||innerWidth<820;document.documentElement.classList.add(m?'m':'d');})();
 </script>
@@ -65,6 +67,15 @@ button{font-family:inherit}
 #loader{position:fixed;inset:0;z-index:100;background:var(--void);display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--gut) calc(clamp(40px,8vh,90px) + env(safe-area-inset-bottom,0px));clip-path:inset(0 0 0 0);transition:clip-path 1.2s cubic-bezier(.7,0,.2,1)}
 #loader.done{clip-path:inset(0 0 100% 0)}
 .ld-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.ld-logo{position:absolute;left:50%;top:44%;width:clamp(170px,22vw,280px);height:auto;transform:translate(-50%,-50%);overflow:visible}
+.ld-logo path[pathLength]{stroke-dasharray:1;stroke-dashoffset:1;animation:ldraw 1.05s cubic-bezier(.3,.1,.2,1) forwards}
+.ld-logo path[fill]:not([fill="none"]){opacity:0;animation:lfade .7s .45s forwards}
+.ld-logo>path:nth-of-type(n+5){animation-delay:.08s}.ld-logo>path:nth-of-type(n+8){animation-delay:.4s}
+.ld-logo>path:nth-of-type(n+11){animation-delay:.62s;animation-duration:.8s}.ld-logo>path:nth-of-type(n+15){animation-delay:.22s;animation-duration:1s}
+@keyframes ldraw{to{stroke-dashoffset:0}}@keyframes lfade{to{opacity:1}}
+.m .ld-logo{top:40%}
+.brand-mark{display:block;flex:0 0 auto}
+.ft-logo{display:block;width:150px;height:auto;margin-bottom:16px}
 .ld-name{font-family:var(--serif);font-size:clamp(20px,2vw,28px);letter-spacing:.14em}
 .ld-note{color:var(--muted);font-size:15px;margin-top:8px}
 .ld-count{font-family:var(--serif);font-size:clamp(64px,12vw,200px);line-height:.85;font-variant-numeric:tabular-nums}
@@ -214,7 +225,7 @@ html:not(.ready) .w>span{transform:translateY(108%)!important}
 .svc-card:hover .open{background:rgba(255,255,255,.12)}
 .svc-card:hover .open i{transform:rotate(-45deg)}
 
-#work{position:relative;height:300vh}
+#work{position:relative;height:420vh}
 .work-sticky{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
 .work-sticky .sec-head{padding:0 var(--gut)}
 .work-row{display:flex;gap:clamp(20px,2.4vw,40px);padding:0 var(--gut);will-change:transform}
@@ -292,6 +303,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
   *{animation:none!important}
   .w>span,.hero-name .c,.p-body,.stats,.swatches,.hero-row p,.rv,.sub-card,.panel{transition:none!important}
   .sig{transition:none}
+  .ld-logo path[pathLength]{stroke-dashoffset:0;animation:none}.ld-logo path[fill]:not([fill="none"]){opacity:1;animation:none}
 }
 /* v4: story told in 3D, only a quiet finale in HTML */
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -445,6 +457,8 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
 .m.in-folio .sub-intro{background:linear-gradient(0deg,rgba(13,18,21,.92),rgba(13,18,21,.6) 55%,rgba(13,18,21,.1))}
 .folio-intro h1{max-width:11em}
 .folio-intro .cta-row{margin-top:30px}
+.folio-caps{margin:18px 0 0;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-2)}
+.m .folio-caps{letter-spacing:.08em;line-height:1.7}
 .folio-count{display:flex;gap:clamp(24px,4vw,64px);margin-top:36px;flex-wrap:wrap}
 .folio-count div{display:flex;flex-direction:column;gap:4px}
 .folio-count b{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3vw,48px);line-height:1}
@@ -553,6 +567,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
 </head>
 <body>
 <div id="loader" aria-hidden="true">
+  <svg class="ld-logo" aria-hidden="true" viewBox="-5 0 900 820"><path pathLength="1" d="M218 730 C150 660 60 560 6 420 C80 440 150 478 210 518" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M 672.0 730.0 C 740.0 660.0 830.0 560.0 884.0 420.0 C 810.0 440.0 740.0 478.0 680.0 518.0" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M218 730 C170 600 140 470 108 305 C180 350 240 400 290 450" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M 672.0 730.0 C 720.0 600.0 750.0 470.0 782.0 305.0 C 710.0 350.0 650.0 400.0 600.0 450.0" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M445 12 C372 140 300 250 262 330 C236 385 226 420 226 470 L226 730" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M 445.0 12.0 C 518.0 140.0 590.0 250.0 628.0 330.0 C 654.0 385.0 664.0 420.0 664.0 470.0 L 664.0 730.0" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M445 12 L445 350.0" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M445 205 C400 265 345 335 303 395 C296 405 298 410 300 412" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M 445.0 205.0 C 490.0 265.0 545.0 335.0 587.0 395.0 C 594.0 405.0 592.0 410.0 590.0 412.0" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M1 731.5 Q445 725 889 731.5 Q445 738 1 731.5 Z" fill="#C9A56E"/><clipPath id="ldN"><path pathLength="1" d="M270.0 487.4 L312.6 454.0 L377.8 649.8 L377.8 402.8 L445.0 350.0 L445.0 730.0 L365.8 727.4 L304.2 524.1 L304.2 725.5 L270.0 724.4 Z"/></clipPath><clipPath id="ldK"><path pathLength="1" d="M445.0 350.0 L516.3 405.9 L516.3 534.6 L577.4 454.0 L616.7 484.8 L547.7 569.8 L620.0 724.4 L581.7 725.6 L518.3 606.0 L516.3 640.8 L516.3 727.7 L445.0 730.0 Z"/></clipPath><path pathLength="1" d="M259.5 528.3L474.9 384.4 M259.5 560.9L474.9 442.2 M259.5 593.6L474.9 500.0 M259.5 626.0L474.9 557.5 M259.5 658.7L474.9 615.3 M259.5 691.4L474.9 673.1" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="2.70" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ldN)"/><path pathLength="1" d="M415.1 384.4L630.5 528.3 M415.1 442.2L630.5 560.9 M415.1 500.0L630.5 593.6 M415.1 557.5L630.5 626.0 M415.1 615.3L630.5 658.7 M415.1 673.1L630.5 691.4" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="2.70" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ldK)"/><path pathLength="1" d="M286.1 449.7L286.1 749.9 M408.8 343.4L408.8 763.9" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="2.70" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ldN)"/><path pathLength="1" d="M483.6 345.5L483.6 763.6" fill="none" stroke="rgba(226,197,146,.42)" stroke-width="2.70" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#ldK)"/><path pathLength="1" d="M270.0 487.4 L312.6 454.0 L377.8 649.8 L377.8 402.8 L445.0 350.0 L445.0 730.0 L365.8 727.4 L304.2 524.1 L304.2 725.5 L270.0 724.4 Z" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/><path pathLength="1" d="M445.0 350.0 L516.3 405.9 L516.3 534.6 L577.4 454.0 L616.7 484.8 L547.7 569.8 L620.0 724.4 L581.7 725.6 L518.3 606.0 L516.3 640.8 L516.3 727.7 L445.0 730.0 Z" fill="none" stroke="#C9A56E" stroke-width="6.00" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <div class="ld-row">
     <div><div class="ld-name">Naresh Kumar</div><div class="ld-note">Clearing the site</div></div>
     <div class="ld-count" id="ld-count">000</div>
@@ -567,7 +582,7 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
 <header class="hud">
   <a class="skip" href="#services">Skip the build</a>
   <a class="brand glass pill" href="#top" aria-label="Naresh Kumar, back to start">
-    <svg width="34" height="34" viewBox="0 0 44 44" fill="none" aria-hidden="true"><rect x="1" y="1" width="42" height="42" rx="10" stroke="#C9A56E" stroke-width="1.2"/><path d="M11 33V11l11 22V11M26 11v22M26 22l9-11M29 18l6 15" stroke="#C9A56E" stroke-width="1.4"/></svg>
+    <svg class="brand-mark" width="40" height="41" aria-hidden="true" viewBox="65 0 760 780"><path d="M445 30 C372 150 300 250 262 330 C238 382 228 420 228 470 L228 730" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M 445.0 30.0 C 518.0 150.0 590.0 250.0 628.0 330.0 C 652.0 382.0 662.0 420.0 662.0 470.0 L 662.0 730.0" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M200 730 C160 600 135 470 100 310 C160 350 200 380 226 405" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M 690.0 730.0 C 730.0 600.0 755.0 470.0 790.0 310.0 C 730.0 350.0 690.0 380.0 664.0 405.0" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M445 30 L445 300" fill="none" stroke="#C9A56E" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><path d="M258.0 413.9 L315.2 388.2 L369.8 623.0 L369.8 363.7 L436.7 333.7 L436.7 729.9 L360.0 728.8 L306.7 489.5 L306.7 728.1 L258.0 727.4 Z M453.3 333.7 L524.1 365.5 L524.1 510.9 L578.2 389.8 L629.1 412.6 L548.0 541.8 L632.0 727.4 L583.3 728.1 L517.2 589.7 L524.1 634.4 L524.1 728.9 L453.3 729.9 Z" fill="#C9A56E"/><path d="M100 736 L790 736" fill="none" stroke="#C9A56E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <span>Naresh Kumar</span><em>LOTUS</em>
   </a>
   <nav class="glass pill" aria-label="Main">
@@ -707,10 +722,10 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
     <div class="work-sticky">
       <div class="sec-head">
         <div><p class="kick">Selected work</p><h2 class="h2">A few of the ten thousand.</h2></div>
-        <div class="work-side"><p class="lede">Homes, a church and a school from the Lotus drawing board. Open one full size, or walk the street they share in 3D.</p><a class="btn-glass glass pill mag" href="#/portfolio">Open the portfolio</a></div>
+        <div class="work-side"><p class="lede">Hospitals, colleges, a church and homes, designed and engineered by one practice. Open one full size, or walk the street they share in 3D.</p><a class="btn-glass glass pill mag" href="#/portfolio">Open the portfolio</a></div>
       </div>
       <div class="work-row" id="work-row"></div>
-      <div class="work-meter" aria-hidden="true"><span><b id="wm-n">01</b> / 05</span><span class="wm-bar" id="wm-bar"><i></i></span><span>Keep scrolling to move along</span></div>
+      <div class="work-meter" aria-hidden="true"><span><b id="wm-n">01</b> / <span id="wm-t">06</span></span><span class="wm-bar" id="wm-bar"><i></i></span><span>Keep scrolling to move along</span></div>
     </div>
   </section>
 
@@ -723,7 +738,8 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
         <div class="c-list">
           <div><small>Telephone</small><a href="tel:+919440340894">+91 94403 40894</a></div>
           <div><small>WhatsApp</small><a class="wa" href="https://wa.me/919440340894" target="_blank" rel="noopener">Message A. Naresh Kumar</a></div>
-          <div><small>Office</small><span>Lotus Planners &amp; Builders, Hyderabad</span></div>
+          <div><small>Email</small><a href="mailto:nareshamidyala@gmail.com">nareshamidyala@gmail.com</a></div>
+          <div><small>Office</small><span>Lotus Planners &amp; Constructions, Vanasthalipuram, Hyderabad</span></div>
         </div>
       </div>
       <form class="c-form glass rv" id="c-form" aria-label="Request a site visit">
@@ -736,13 +752,13 @@ footer.ft{display:flex;justify-content:space-between;align-items:flex-end;flex-w
         </div>
         <div class="fld"><label for="f-msg">Plot location and size, if you know them</label><textarea id="f-msg" name="msg"></textarea></div>
         <button class="btn-solid mag" type="submit">Send on WhatsApp</button>
-        <p class="f-note">Opens WhatsApp with your details filled in. Nothing is stored on this page.</p>
+        <p class="f-note">Opens WhatsApp with your details filled in. Nothing is stored on this page. Prefer email? Write to <a href="mailto:nareshamidyala@gmail.com" style="color:var(--brass-2)">nareshamidyala@gmail.com</a>.</p>
       </form>
     </div>
   </section>
 
   <footer class="ft">
-    <div><div class="fsig" aria-hidden="true">Naresh Kumar</div><div style="margin-top:10px">Civil engineering, construction, material contracts and interiors. Hyderabad.</div><div class="lotus">LOTUS · PLANNERS &amp; BUILDERS</div></div>
+    <div><img class="ft-logo" src="assets/brand/logo-dark-bold.svg" alt="Lotus Planners &amp; Constructions" width="150" height="137" loading="lazy"><div class="fsig" aria-hidden="true">Naresh Kumar</div><div style="margin-top:10px">Civil engineering, construction, material contracts and interiors. Hyderabad.</div><div class="lotus">LOTUS · PLANNERS &amp; CONSTRUCTIONS</div></div>
     <nav class="ft-links" aria-label="Footer"><a href="#/portfolio">Portfolio</a><a href="#/construction">Construction</a><a href="#/materials">Materials</a><a href="#/interiors">Interiors</a><a href="#contact">Contact</a></nav>
     <div>© 2026 Naresh Kumar · Lotus Constructions</div>
     <a href="#top">Back to the beginning</a>
@@ -867,48 +883,48 @@ $('#c-form').addEventListener('submit',function(e){e.preventDefault();var f=e.ta
 
 /* ---------------- route content ---------------- */
 var ROUTES={
-  construction:{kick:'Construction',title:'How a building stands up.',lede:'One corner of a house, cut open and built the way we build every one: from the soil report to the final coat of paint. Scroll to build it.',
+  construction:{kick:'Construction',title:'How a building stands up.',lede:'One corner of a house, cut open to show what most builders cover up. Every stage is supervised by the engineer who designed it. Scroll to build it.',
     steps:[
-      ['01','Excavation','Down to firm ground, then a level bed.','The pit is dug to firm strata, at the depth the soil report calls for. A lean-concrete bed goes in first, so the steel never sits on bare earth.',['Soil report first','PCC levelling bed']],
-      ['02','Footing steel','A mat of steel, lifted off the bed.','TMT bars run both ways at the bottom of the footing, raised on cover blocks so concrete can wrap every bar. The column starter bars are bent into the mat so column and footing act as one.',['Bottom mat, both ways','50 mm cover in footings','L-bent starter bars']],
-      ['03','Footing concrete','One continuous pour.','The footing is cast in a single pour and vibrated so there are no hidden voids. We have cut it open here so you can see the steel it now protects.',['Vibrated','Cured, not rushed']],
-      ['04','Column','Lapped bars, close ties.','Main bars are lapped onto the starters and held by closely spaced lateral ties. The ties are what stop the bars buckling outwards when the column is loaded.',['Main bars lapped','Lateral ties','Cut open to show the cage']],
-      ['05','Plinth beam','Tie the columns, stop the damp.','A plinth beam ties the columns together at ground level. A damp-proof course on top stops moisture rising from the ground into the walls.',['Plinth beam','Damp-proof course']],
-      ['06','Brickwork','English bond, joints filled solid.','Headers and stretchers in alternate courses, so no vertical joint runs straight through the wall. Every joint is filled, and each lift is racked back so the next one bonds into it.',['English bond','10 mm joints','Racked back']],
-      ['07','Beam and slab','Steel where the slab bends.','The beam carries the slab. Main bars run across the short span at the bottom, distribution bars sit across them, and extra top bars go over the beam where the slab tries to bend upwards.',['Main bars','Distribution bars','Extra top bars over supports','Stirrups']],
-      ['08','Plaster to paint','Layers that are allowed to cure.','Cement plaster, wall putty, a primer and two finish coats. Each layer cures before the next goes on, which is what keeps paint from cracking or bubbling later.',['Cement plaster','Putty','Primer','Two finish coats']]
+      ['01','Groundwork','Built on certainty, not hope.','Every project starts below ground, where decisions matter most and are hardest to undo. We read the site before we dig, and the foundation is set to what the ground can truly carry.',['Site studied first','Foundation to suit the ground']],
+      ['02','Footing steel','Steel placed to be protected.','The reinforcement goes in exactly as designed and is checked by the engineer before any concrete arrives. Nothing is covered until it is right.',['Engineer-checked','Placed as designed']],
+      ['03','Footing concrete','Solid all the way through.','The footing is cast sound throughout and given the time it needs to gain its strength. We have cut it open here so you can see the steel it protects.',['Cast whole','Cured, not rushed']],
+      ['04','Column','The spine of the building.','Columns carry everything above them, so they get our closest attention: steel, alignment and concrete are checked at every stage.',['Checked at every stage','Cut open to show the cage']],
+      ['05','Plinth','Tied together, kept dry.','At ground level the columns are tied into one frame, and the walls are protected from rising damp before they are built.',['One frame','Damp protection']],
+      ['06','Brickwork','Walls laid true.','Walls go up level, plumb and properly bonded, course by course, by masons who have worked with us for years.',['Properly bonded','Level and plumb','Trusted masons']],
+      ['07','Beam and slab','Engineered for the load.','Beams and slabs are reinforced for the loads your building will really carry, including the places that are easy to miss. The mesh is left open here to show it.',['Engineered reinforcement','Checked before every pour']],
+      ['08','Plaster to paint','A finish that lasts.','Plaster, putty, primer and finish, each given the time it needs, so walls stay smooth and paint stays put for years.',['Plaster','Putty','Primer','Finish coats']]
     ],
     labels:[
-      [0,'Excavated to firm strata',[-1.25,-.6,1.25]],[0,'PCC levelling bed',[.75,-1.42,.75]],
-      [1,'Bottom mat, TMT both ways',[.6,-1.3,.35]],[1,'Starter bars with L-bends',[.16,.6,.16]],[1,'Cover blocks',[.62,-1.37,-.6]],
-      [2,'Isolated footing, cut open',[.45,-.95,-.45]],[2,'Steel inside the pour',[.55,-1.3,.55]],
-      [3,'Main bars, lapped',[.16,1.9,.16]],[3,'Lateral ties',[.2,1.2,-.05]],
-      [4,'Plinth beam',[-1.6,.1,.12]],[4,'Damp-proof course',[-2.3,.33,.12]],
-      [5,'Header course',[-1.2,1.1,.12]],[5,'Stretcher course',[-1.9,1.6,.12]],[5,'Racked back for the next lift',[-2.4,2.2,.1]],
-      [6,'Slab poured 150 mm thick',[-1.9,3.15,-1.3]],[6,'Mesh left open to show the steel',[.6,3.05,.7]],[6,'Extra top bars over the beam',[-.3,3.13,.3]],[6,'Props hold the formwork',[-2.6,1.6,-1.8]],
-      [7,'Cement plaster',[-1.6,1.2,.14]],[7,'Wall putty',[-1.15,1.5,.15]],[7,'Primer',[-.8,1.8,.16]],[7,'Two finish coats',[-.42,2.1,.17]]
+      [0,'Excavated to firm ground',[-1.25,-.6,1.25]],[0,'Levelling bed',[.75,-1.42,.75]],
+      [1,'Reinforcement mat',[.6,-1.3,.35]],[1,'Starter bars',[.16,.6,.16]],[1,'Steel held clear of the ground',[.62,-1.37,-.6]],
+      [2,'Footing, cut open',[.45,-.95,-.45]],[2,'Steel inside the pour',[.55,-1.3,.55]],
+      [3,'Column bars',[.16,1.9,.16]],[3,'Ties',[.2,1.2,-.05]],
+      [4,'Plinth beam',[-1.6,.1,.12]],[4,'Damp protection',[-2.3,.33,.12]],
+      [5,'Bonded courses',[-1.2,1.1,.12]],[5,'Laid level',[-1.9,1.6,.12]],[5,'Ready for the next lift',[-2.4,2.2,.1]],
+      [6,'Slab poured whole',[-1.9,3.15,-1.3]],[6,'Mesh left open to show the steel',[.6,3.05,.7]],[6,'Extra steel over the beam',[-.3,3.13,.3]],[6,'Props hold the formwork',[-2.6,1.6,-1.8]],
+      [7,'Plaster',[-1.6,1.2,.14]],[7,'Putty',[-1.15,1.5,.15]],[7,'Primer',[-.8,1.8,.16]],[7,'Finish coats',[-.42,2.1,.17]]
     ],
     next:['materials','Next: the materials']},
-  materials:{kick:'Material contracts',title:'What goes into the walls you never see.',lede:'On a material contract we specify, source and check what goes into your building. These are the materials that matter most, and what to look for in each. Drag to turn each specimen.',
+  materials:{kick:'Material contracts',title:'What goes into the walls you never see.',lede:'On a material contract we specify, source and check everything that goes into your building, so what is in your walls is exactly what was designed. Drag to turn each specimen.',
     steps:[
-      ['01','TMT steel','A hard skin and a ductile core.','Thermo-mechanically treated bars are quenched so the outer rim hardens while the core stays ductile, which lets a column bend in an earthquake instead of snapping. The grade is set by the structural design: Fe 500 or Fe 500D for most homes, Fe 550D for heavier loads, and corrosion-resistant TMT near the coast or on damp sites.',['IS 1786','Fe 500D','Fe 550D','CRS for damp sites']],
-      ['02','Cement','The right cement for the job.','OPC 53 grade for structural concrete where early strength matters. PPC for plaster and masonry, where workability and a slower, cooler cure help. Bags are stored off the ground and used fresh, because cement loses strength as it ages.',['IS 269, OPC 53','IS 1489, PPC','Stored dry, used fresh']],
-      ['03','Bricks and blocks','Chosen wall by wall.','Red clay bricks for load-bearing and traditional walls. AAC blocks where a lighter wall and better insulation matter more. The choice is made wall by wall, not by habit.',['IS 1077 clay brick','IS 2185 AAC','230 × 110 × 75 mm','600 × 200 × 200 mm']],
-      ['04','Aggregates and sand','Clean, graded, washed.','Well-graded 20 mm and 10 mm aggregate and washed manufactured or river sand, free of silt and clay. Dirty aggregate quietly weakens concrete, so it is checked before it is used.',['IS 383','20 mm and 10 mm','M-sand']],
-      ['05','Concrete','Proven, not assumed.','Mixes are designed for the grade the structure needs, typically M20 or M25 for homes. Test cubes are cast from the pour and crushed at 7 and 28 days, so the strength is measured rather than hoped for.',['IS 456','IS 516 cube tests','M25','7 and 28 days']]
+      ['01','TMT steel','Strength with give.','Reinforcement chosen for strength and for the ductility that lets a structure flex rather than fail. The right grade for each building, from trusted mills, checked on arrival.',['Certified grades','Trusted mills','Checked on arrival']],
+      ['02','Cement','The right cement for each job.','Different work needs different cement. We match it to the task, and it arrives fresh and is stored properly, because cement loses strength with age.',['Matched to the work','Fresh stock']],
+      ['03','Bricks and blocks','Chosen wall by wall.','Clay brick or lightweight block, chosen for what each wall has to do, not out of habit.',['Clay brick','Lightweight block','Chosen per wall']],
+      ['04','Aggregates and sand','Clean and graded.','Aggregate and sand arrive clean and properly graded, because dirty material quietly weakens concrete. Nothing is used unchecked.',['Clean','Graded','Checked']],
+      ['05','Concrete','Proven, not assumed.','Concrete is mixed for the strength the structure needs, and that strength is tested, not taken on trust.',['Designed mixes','Strength tested']]
     ],
     labels:[
-      [0,'Hard tempered rim',[.66,1.425,.35],0],[0,'Ductile core',[.55,1.425,.35],0],[0,'Ribs that grip the concrete',[0,.25,-.05],0],
-      [1,'OPC 53 grade, IS 269',[-.15,.34,0],1],[1,'Fresh, lump-free powder',[.7,.3,.45],1],
-      [2,'Clay brick, 230 × 110 × 75',[-.05,.3,.35],2],[2,'AAC block, lighter and insulating',[-.4,.42,-.25],2],
-      [3,'20 mm aggregate',[-.4,.32,0],3],[3,'Washed M-sand',[.55,.38,.1],3],
-      [4,'M25 test cube',[-.3,.32,0],4],[4,'Crushed at 7 and 28 days',[-.1,.62,.05],4]
+      [0,'Hard outer rim',[.66,1.425,.35],0],[0,'Ductile core',[.55,1.425,.35],0],[0,'Ribs that grip the concrete',[0,.25,-.05],0],
+      [1,'Structural-grade cement',[-.15,.34,0],1],[1,'Fresh, lump-free powder',[.7,.3,.45],1],
+      [2,'Clay brick',[-.05,.3,.35],2],[2,'Lightweight block',[-.4,.42,-.25],2],
+      [3,'Coarse aggregate',[-.4,.32,0],3],[3,'Washed sand',[.55,.38,.1],3],
+      [4,'Test cube',[-.3,.32,0],4],[4,'Crushed to prove strength',[-.1,.62,.05],4]
     ],next:['interiors','Next: a finished interior']},
   interiors:{kick:'Interiors, in house',title:'Walk through a finished interior.',lede:'The same house, finished inside by our own studio, from the living room up the stair to the bedroom. Change the palette as you go.',
     steps:[
       ['01','Living','Joinery built to the room.','A walnut media wall with brass inlays and a hidden backlight, a made-to-measure bookshelf, and furniture laid out around the way the family actually sits.',['Media wall','Bookshelf','Custom sofa']],
       ['02','Kitchen','Stone, timber and task light.','An island in stone with seating for three, a full-height pantry, and light under every shelf so the worktop is never in your own shadow.',['Stone island','Pantry column','Under-shelf light']],
-      ['03','The stair','Twenty easy steps.','Risers of 187 mm and generous treads, so the stair is as comfortable going down as going up. A walnut wall between the flights carries the handrail.',['20 risers','Landing at the turn','Walnut spine wall']],
+      ['03','The stair','An easy stair.','Low risers and generous treads, so the stair is as comfortable going down as going up. A walnut wall between the flights carries the handrail.',['Easy risers','Landing at the turn','Walnut spine wall']],
       ['04','Upstairs','The house goes quiet upstairs.','The stair turns at a landing and arrives in the family lounge, with a glass guard around the stairwell and the terrace beyond the glass.',['Family lounge','Glass guard','Terrace']],
       ['05','Bedroom','A room built around rest.','A walnut bed against a dark headboard wall, lamps at arm\'s reach, and a full-height wardrobe built into the wall.',['Headboard wall','Bedside lamps','Built-in wardrobe']],
       ['06','Lighting','Layered, not flooded.','Cove light in a dark ceiling, downlights where you need them, and lamps for the evening. Every circuit is planned before the ceiling closes.',['Cove','Downlights','Lamps']]
@@ -916,7 +932,7 @@ var ROUTES={
     labels:[
       [0,'Walnut media wall',[-5.6,2.4,0]],[0,'Made-to-measure bookshelf',[-3.9,2.6,-3.55]],[0,'Arc floor lamp',[-2.0,2.7,-2.3]],
       [1,'Stone island',[1.6,1.55,-1.8]],[1,'Under-shelf light',[1.6,2.45,-3.6]],[1,'Pendants',[1.6,3.0,-1.8]],
-      [2,'187 mm risers',[5.3,1.45,-1.3]],[2,'Walnut spine wall',[4.75,2.4,-1.2]],[2,'Landing at the turn',[4.75,2.6,-3.35]],
+      [2,'Easy, even risers',[5.3,1.45,-1.3]],[2,'Walnut spine wall',[4.75,2.4,-1.2]],[2,'Landing at the turn',[4.75,2.6,-3.35]],
       [3,'Family lounge',[1.0,5.3,.9]],[3,'Glass guard at the stairwell',[3.55,5.0,-2.2]],[3,'Terrace beyond',[-2,5.6,1]],
       [4,'Headboard wall',[10,5.3,-3.7]],[4,'Bedside lamps',[8.45,5.25,-3.5]],[4,'Built-in wardrobe',[11,6.1,3.3]],
       [5,'Cove light',[5,7.45,3.55]],[5,'Downlights',[1.2,7.47,0]],[5,'Reading lamp',[-.35,5.95,-2.9]]
@@ -1181,6 +1197,12 @@ function lotusTextures(){
     for(var y=8;y<h-6;y+=8){var t=y/h,len=(w/2-5)*Math.sin(Math.min(1,t*1.12)*Math.PI*.92+.12);g.strokeStyle=rgbS(58+rnd(y)*40,96+rnd(y+1)*44,34+rnd(y+2)*18);g.lineWidth=3.4;
       g.beginPath();g.moveTo(w/2,y);g.lineTo(w/2-len,y+len*.6);g.stroke();g.beginPath();g.moveTo(w/2,y);g.lineTo(w/2+len,y+len*.6);g.stroke();}});
   X.trunk=T(128,256,[1,1.2],function(g,w,h){g.fillStyle='#7d6d5b';g.fillRect(0,0,w,h);for(var y=0;y<h;y+=10+rnd(y)*6){g.fillStyle='rgba(40,30,22,.45)';g.fillRect(0,y,w,2.2);g.fillStyle='rgba(255,240,220,.08)';g.fillRect(0,y+2.2,w,2);}});
+  X.stucco=T(256,256,[2.6,2.6],function(g,w,h){g.fillStyle='#d6c9ab';g.fillRect(0,0,w,h);for(var q=0;q<5200;q++){var t=rnd(q)*.5;g.fillStyle=rgbS(198+t*40,186+t*38,160+t*32,.5);var s2=1+rnd(q+2)*2.6;g.fillRect(rnd(q+4)*w,rnd(q+6)*h,s2,s2);}
+    for(q=0;q<9;q++){var sx=rnd(q*7)*w,gr=g.createLinearGradient(0,0,0,h);gr.addColorStop(0,'rgba(70,58,40,.12)');gr.addColorStop(1,'rgba(70,58,40,0)');g.fillStyle=gr;g.fillRect(sx,0,6+rnd(q)*18,h*.6+rnd(q+1)*h*.4);}});
+  X.stoneTile=T(256,256,[1.3,1.3],function(g,w,h){g.fillStyle='#8f8068';g.fillRect(0,0,w,h);for(var r=0;r<2;r++)for(var c=0;c<2;c++){var t=rnd(r*3+c*7)*24;g.fillStyle=rgbS(198+t,184+t,158+t*.8);g.fillRect(c*128+1.5,r*128+1.5,125,125);for(var q=0;q<260;q++){g.fillStyle='rgba(120,100,70,'+(rnd(q+r*50+c*9)*.18)+')';g.fillRect(c*128+rnd(q*3+c)*125,r*128+rnd(q*5+r)*125,2,1);}}});
+  X.rail=T(64,256,[.13,1],function(g,w,h){g.clearRect(0,0,w,h);g.fillStyle='#1b1e22';g.fillRect(27,0,10,h);});
+  X.shutter=T(128,128,[1,.3],function(g,w,h){g.fillStyle='#8d9296';g.fillRect(0,0,w,h);for(var y=0;y<h;y+=16){g.fillStyle='rgba(0,0,0,.28)';g.fillRect(0,y,w,3);g.fillStyle='rgba(255,255,255,.18)';g.fillRect(0,y+3,w,2);}});
+  X.brick=T(256,128,[1,.5],function(g,w,h){g.fillStyle='#b9ada0';g.fillRect(0,0,w,h);for(var r=0;r<8;r++)for(var c=-1;c<5;c++){var t=rnd(r*11+c)*30;g.fillStyle=rgbS(150+t,72+t*.4,52+t*.3);g.fillRect(c*64+(r%2)*32+1.5,r*16+1.5,61,13);}});
   X.ganesha=new THREE.TextureLoader().load('assets/tex/ganesha.png');X.tree=new THREE.TextureLoader().load('assets/tex/tree-motif.png');
   [X.ganesha,X.tree].forEach(function(t){t.encoding=THREE.sRGBEncoding;t.anisotropy=ANISO;});
   return X;
@@ -1205,10 +1227,13 @@ function lotusMaterials(){
     nCream:st({color:0xebe1c4,roughness:.88}),maroon:st({color:0x6d2b22,roughness:.7}),teal:st({map:X.teal,roughness:.9}),
     grass:st({map:X.grass,roughness:1,envMapIntensity:.2}),pave:st({map:X.pave,roughness:.8}),tile:st({map:X.tile,roughness:.45,envMapIntensity:.6}),
     leaf:S.M.leaf,bark:S.M.bark,trunk:st({map:X.trunk,roughness:.92,envMapIntensity:.3}),
-    frond:st({map:X.frond,alphaTest:.42,side:THREE.DoubleSide,roughness:.75,envMapIntensity:.35})
+    frond:st({map:X.frond,alphaTest:.42,side:THREE.DoubleSide,roughness:.75,envMapIntensity:.35}),
+    greyP:st({color:0xc6c9cc,roughness:.55,envMapIntensity:.6}),stucco:st({map:X.stucco,bumpMap:X.stucco,bumpScale:.08,color:0xffffff,roughness:.9,envMapIntensity:.35}),lfWall:st({color:0xeee5d3,roughness:.85}),slate2:st({color:0x3d4755,roughness:.6,envMapIntensity:.6}),stoneTile:st({map:X.stoneTile,roughness:.6,envMapIntensity:.5}),railBars:st({map:X.rail,alphaTest:.5,side:THREE.DoubleSide,roughness:.4,metalness:.5}),
+    glassBlue:st({color:0x2a5872,roughness:.05,metalness:.55,envMap:E,envMapIntensity:1.6}),winBlue:st({color:0x3d74b8,roughness:.05,metalness:.4,envMap:E,envMapIntensity:1.4,emissive:0x2a5aa0,emissiveIntensity:.15}),dvGrey:st({color:0xd2d0cb,roughness:.88}),charcoal:st({color:0x4a4f56,roughness:.7}),oxWall:st({color:0xebe7df,roughness:.85}),sGrey:st({color:0xcfd2d4,roughness:.7}),
+    shutter:st({map:X.shutter,roughness:.5,metalness:.4,envMapIntensity:.6}),brick:st({map:X.brick,roughness:.9}),stoneDk:st({map:X.stone,bumpMap:X.stone,bumpScale:.22,color:0x6e6e6c,roughness:.9,envMapIntensity:.3}),woodDk:st({map:X.wood,bumpMap:X.wood,bumpScale:.15,color:0x5e4436,roughness:.5,envMapIntensity:.5})
   };
-  P.frond.userData.keepUV=true;P.frond.userData.noCast=true;
-  P.wash=[P.white,P.cream,P.lilac,P.nCream,P.chGrey,P.stone,P.stoneLt,P.wood,P.granite,P.chStone,P.teal,P.maroon];
+  P.frond.userData.keepUV=true;P.frond.userData.noCast=true;P.railBars.userData.noCast=true;
+  P.wash=[P.white,P.cream,P.lilac,P.nCream,P.chGrey,P.stone,P.stoneLt,P.wood,P.granite,P.chStone,P.teal,P.maroon,P.greyP,P.stoneDk,P.woodDk,P.stucco,P.lfWall,P.stoneTile,P.dvGrey,P.oxWall,P.sGrey];
   P.wash.forEach(function(m){m.emissive=new THREE.Color(0xffe3c4);if(m.map)m.emissiveMap=m.map;m.emissiveIntensity=0;});
   P.X=X;S.PM=P;return P;
 }
@@ -1264,15 +1289,16 @@ function archShape(w,h,path){var s=path?new THREE.Path():new THREE.Shape(),hw=w/
   s.moveTo(-hw,0);s.lineTo(hw,0);s.lineTo(hw,sp);s.absarc(-hw,sp,w,0,Math.PI/3,false);s.absarc(hw,sp,w,Math.PI*2/3,Math.PI,false);s.lineTo(-hw,0);return s;}
 function roundShape(w,h,path){var s=path?new THREE.Path():new THREE.Shape(),hw=w/2,sp=h-hw;s.moveTo(-hw,0);s.lineTo(hw,0);s.lineTo(hw,sp);s.absarc(0,sp,hw,0,Math.PI,false);s.lineTo(-hw,0);return s;}
 /* an arched window: glass behind a frame that is the outer arch less the inner one */
-function archWin(b,shapeFn,x,y,z,w,h,t,g,f,mull){
+function archWin(b,shapeFn,x,y,z,w,h,t,g,f,mull,ry){
   var o=shapeFn(w+2*t,h+2*t),hole=shapeFn(w,h,true);
   o.holes.push(new THREE.Path(hole.getPoints(24).map(function(p){return new THREE.Vector2(p.x,p.y+t);})));
-  var fg=new THREE.ExtrudeGeometry(o,{depth:.12,bevelEnabled:false,curveSegments:12});b.g(f||'white',fg,x,y-t,z-.04);
-  b.g(g,new THREE.ShapeGeometry(shapeFn(w,h),12),x,y,z+.035);
-  for(var i=1;i<=(mull||0);i++){var xm=x-w/2+w*i/(mull+1);b.b(f||'white',xm-.03,y,z-.02,xm+.03,y+h-w*.3,z+.08);}
+  function put(k,geo,dx,dy,dz){geo.translate(dx,dy,dz);b.g(k,geo,x,y,z,ry||0);}
+  put(f||'white',new THREE.ExtrudeGeometry(o,{depth:.12,bevelEnabled:false,curveSegments:12}),0,-t,-.04);
+  put(g,new THREE.ShapeGeometry(shapeFn(w,h),12),0,0,.035);
+  for(var i=1;i<=(mull||0);i++){var mh=h-w*.3;put(f||'white',new THREE.BoxGeometry(.06,mh,.1),-w/2+w*i/(mull+1),mh/2,.03);}
 }
 
-/* ---- Santaprasad residence: ground + one, Gayatri Nagar ---- */
+/* ---- Santaprasad residence: ground + one ---- */
 function bSantaprasad(b,g,P,wz){
   var L=.75,i;
   b.b('tile',-6.7,0,-12.6,6.5,L,1.45);b.b('dark',-6.72,0,1.4,6.52,.22,1.47);
@@ -1373,73 +1399,197 @@ function bJamuna(b,g,P,wz){
   b.b('pave',-.45,0,1.3,3.75,.05,wz-.2);
   palm(b,-4.7,6.6,8.2,11);palm(b,4.8,6.2,9.2,13);
 }
-/* ---- Little Lamb Church, Vanasthalipuram ---- */
+/* ---- Little Lamb Church ---- */
+/* the render is a corner view: the nave faces the road, and a two-storey hall turns the corner as the right-hand front */
 function bChurch(b,g,P,wz,sign){
-  var i,x;
-  // nave: long grey hall, buttresses, lancet windows, a red clerestory and a notched parapet
-  b.b('chGrey',-20,0,-12,8,8.6,0);b.b('chStone',-20.1,0,-12.1,8,.7,.15);
-  for(i=0;i<10;i++){x=-19.6+i*3;
-    b.b('chStone',x-.4,0,-.1,x+.4,9.9,.5);b.b('white',x-.48,9.9,-.18,x+.48,10.1,.58);if(i>6||i<2)pinnacle(b,x,10.1,.2,.8);
-    if(i<9&&(x+1.5<-7||x+1.5>0)){archWin(b,archShape,x+1.5,2.1,0,1.05,3.3,.12,'winC','white',2);
-      archWin(b,roundShape,x+1.1,6.75,0,.34,.7,.06,'pink','white');archWin(b,roundShape,x+1.9,6.75,0,.34,.7,.06,'pink','white');
-      b.b('chGrey',x+.4,8.6,-.35,x+2.6,9.35,.05);b.b('chGrey',x+1.05,9.35,-.35,x+1.95,9.75,.05);b.b('white',x+.4,9.35,-.4,x+1.05,9.43,.1);b.b('white',x+1.95,9.35,-.4,x+2.6,9.43,.1);b.b('white',x+1.0,9.75,-.4,x+2.0,9.83,.1);}}
-  // front gable: taller bay with the great window, the name and a bell turret with the red cross
+  var i,x,R2=Math.PI/2;
+  // the nave along the road: stone buttresses, lancets, a red clerestory and a notched parapet
+  b.b('chGrey',-28,0,-13,8.5,8.6,0);b.b('chStone',-28.1,0,-13.1,8.5,.7,.15);
+  var piers=[-28,-25,-22,-19];for(i=0;i<=7;i++)piers.push(-12+i*20.5/7);
+  piers.forEach(function(px,j){var gb=px===-19||px===-12;
+    b.b('chStone',px-.4,0,-.1,px+.4,gb?10.4:9.9,gb?1.25:.5);
+    if(!gb&&px>-19){b.b('white',px-.48,9.9,-.18,px+.48,10.1,.58);if(j%2===1&&j<11)pinnacle(b,px,10.1,.2,.8);}});
+  for(i=0;i<piers.length-1;i++){var a=piers[i],c=piers[i+1],m=(a+c)/2;if(a===-19)continue;
+    archWin(b,archShape,m,2.1,0,1.05,3.3,.12,'winC','white',2);
+    archWin(b,roundShape,m-.4,6.75,0,.34,.7,.06,'pink','white');archWin(b,roundShape,m+.4,6.75,0,.34,.7,.06,'pink','white');
+    if(a>-19){b.b('chGrey',a+.4,8.6,-.35,c-.4,9.35,.05);b.b('chGrey',m-.45,9.35,-.35,m+.45,9.75,.05);
+      b.b('white',a+.4,9.35,-.4,m-.45,9.43,.1);b.b('white',m+.45,9.35,-.4,c-.4,9.43,.1);b.b('white',m-.5,9.75,-.4,m+.5,9.83,.1);}}
+  // the tower over the far end of the nave
+  b.b('chGrey',-28,8.6,-13,-19,12,0);[-28,-23.7,-19.4].forEach(function(xx){b.b('white',xx,8.6,-.05,xx+.4,12,.32);});
+  b.b('white',-28.1,8.6,-13.1,-18.9,8.9,.36);
+  [-25.7,-21.3].forEach(function(xx){archWin(b,roundShape,xx,9.15,0,1.2,2.1,.12,'winC','white');});
+  b.b('white',-28.2,12,-13.2,-18.8,12.3,.4);for(i=0;i<22;i++)b.b('white',-28.1+i*.42,12.3,.05,-27.88+i*.42,12.72,.4);
+  [[-27.7,.1],[-19.3,.1],[-27.7,-12.8],[-19.3,-12.8]].forEach(function(p){pinnacle(b,p[0],12.3,p[1],1.05);});
+  // the gabled bay: the great window, the name, and the bell turret with its red cross
   var gs=new THREE.Shape();gs.moveTo(-3.5,0);gs.lineTo(3.5,0);gs.lineTo(3.5,10.2);gs.lineTo(0,13);gs.lineTo(-3.5,10.2);gs.lineTo(-3.5,0);
-  b.g('chGrey',new THREE.ExtrudeGeometry(gs,{depth:1.1,bevelEnabled:false}),-3.5,0,-.1);
-  b.b('chStone',-7.2,0,-.2,-6.6,10.4,1.25);b.b('chStone',-.4,0,-.2,.2,10.4,1.25);
-  var eg=new THREE.Shape();eg.moveTo(-3.9,10.1);eg.lineTo(0,13.25);eg.lineTo(3.9,10.1);eg.lineTo(3.9,10.4);eg.lineTo(0,13.6);eg.lineTo(-3.9,10.4);eg.lineTo(-3.9,10.1);b.g('white',new THREE.ExtrudeGeometry(eg,{depth:1.3,bevelEnabled:false}),-3.5,0,-.15);
-  archWin(b,archShape,-3.5,2.1,1.0,2.6,5.0,.18,'winC','white',3);archWin(b,archShape,-5.55,2.5,1.0,.7,3.4,.1,'winC','white');archWin(b,archShape,-1.45,2.5,1.0,.7,3.4,.1,'winC','white');
-  b.g('white',new THREE.TorusGeometry(.5,.06,8,32),-3.5,10.0,1.03);b.g('winB',new THREE.CircleGeometry(.48,32),-3.5,10.0,1.01);
+  b.g('chGrey',new THREE.ExtrudeGeometry(gs,{depth:1.1,bevelEnabled:false}),-15.5,0,-.1);
+  var eg=new THREE.Shape();eg.moveTo(-3.9,10.1);eg.lineTo(0,13.25);eg.lineTo(3.9,10.1);eg.lineTo(3.9,10.4);eg.lineTo(0,13.6);eg.lineTo(-3.9,10.4);eg.lineTo(-3.9,10.1);b.g('white',new THREE.ExtrudeGeometry(eg,{depth:1.3,bevelEnabled:false}),-15.5,0,-.15);
+  archWin(b,archShape,-15.5,2.1,1.0,2.6,5.0,.18,'winC','white',3);archWin(b,archShape,-17.55,2.5,1.0,.7,3.4,.1,'winC','white');archWin(b,archShape,-13.45,2.5,1.0,.7,3.4,.1,'winC','white');
+  b.g('white',new THREE.TorusGeometry(.5,.06,8,32),-15.5,10.0,1.03);b.g('winB',new THREE.CircleGeometry(.48,32),-15.5,10.0,1.01);
   var nt=textTex('LITTLE LAMB CHURCH','#e8392a',120,true),nm=new THREE.MeshStandardMaterial({map:nt,transparent:true,color:0xffffff,emissive:0xff2a1a,emissiveMap:nt,emissiveIntensity:.25,roughness:.5,depthWrite:false});
-  var tp=new THREE.Mesh(new THREE.PlaneGeometry(5.8,5.8/nt.userData.aspect),nm);tp.position.set(-3.5,8.2,1.04);g.push(tp);sign.push(nm);
-  b.b('white',-4.6,12.4,-.6,-2.4,15.4,1.0);
-  archWin(b,roundShape,-3.5,13.0,1.02,.8,1.7,.08,'dark','white');
-  b.b('white',-4.8,15.4,-.8,-2.2,15.65,1.2);b.g('white',new THREE.SphereGeometry(.95,20,10,0,Math.PI*2,0,Math.PI/2),-3.5,15.65,.2);
-  b.g('white',new THREE.CylinderGeometry(.22,.3,.6,12),-3.5,16.85,.2);b.b('white',-3.55,17.1,.15,-3.45,17.9,.25);b.b('white',-3.78,17.55,.15,-3.22,17.65,.25);
-  b.b('red',-3.68,12.5,1.02,-3.32,16.2,1.3);b.b('red',-4.55,14.9,1.02,-2.45,15.28,1.3);
-  // left tower with white quoins, arched openings, a toothed parapet and four pinnacles
-  b.b('chGrey',-26.5,0,-11,-20,11.5,1.0);b.b('chStone',-26.6,0,-11.1,-20,.7,1.15);
-  [-26.5,-24.25,-22.25,-20.4].forEach(function(xx){b.b('white',xx,0,.95,xx+.4,11.5,1.25);});b.b('white',-26.6,5.9,.9,-19.9,6.3,1.35);
-  [-25.2,-21.3].forEach(function(xx){archWin(b,roundShape,xx,7.1,1.05,1.3,3.0,.14,'dark','white');archWin(b,archShape,xx,2.2,1.05,1.0,2.9,.12,'winC','white',1);});
-  b.b('white',-26.7,11.5,-11.2,-19.8,11.9,1.4);for(i=0;i<16;i++)b.b('white',-26.6+i*.42,11.9,1.05,-26.38+i*.42,12.35,1.4);
-  [[-26.3,.9],[-20.2,.9],[-26.3,-10.8],[-20.2,-10.8]].forEach(function(p){pinnacle(b,p[0],11.9,p[1],1.05);});
-  // annex: glazed ground floor, cornice, name rail, towers, gable with dome
-  b.b('dark',8,0,-14,22,4.2,.6);
-  [[8.8,12.3],[12.9,16.4],[17.0,18.6]].forEach(function(s,j){b.b(j===1?'winD':'winC',s[0],.4,.55,s[1],4.0,.66);for(var q=0;q<5;q++)b.b('dark',s[0],.4+q*.9,.64,s[1],.46+q*.9,.72);for(q=0;q<=4;q++){var xq=s[0]+(s[1]-s[0])*q/4;b.b('dark',xq-.03,.4,.64,xq+.03,4.0,.72);}});
-  b.b('white',7.8,4.2,-14.2,22.2,4.6,1.1);
-  b.b('chGrey',8,4.6,-14,19.5,8.6,.3);
+  var tp=new THREE.Mesh(new THREE.PlaneGeometry(5.8,5.8/nt.userData.aspect),nm);tp.position.set(-15.5,8.2,1.04);g.push(tp);sign.push(nm);
+  b.b('white',-16.6,12.4,-.6,-14.4,15.4,1.0);archWin(b,roundShape,-15.5,13.0,1.02,.8,1.7,.08,'dark','white');
+  b.b('white',-16.8,15.4,-.8,-14.2,15.65,1.2);b.g('white',new THREE.SphereGeometry(.95,20,10,0,Math.PI*2,0,Math.PI/2),-15.5,15.65,.2);
+  b.g('white',new THREE.CylinderGeometry(.22,.3,.6,12),-15.5,16.85,.2);b.b('white',-15.55,17.1,.15,-15.45,17.9,.25);b.b('white',-15.78,17.55,.15,-15.22,17.65,.25);
+  b.b('red',-15.68,12.5,1.02,-15.32,16.2,1.3);b.b('red',-16.55,14.9,1.02,-14.45,15.28,1.3);
+  // round the corner: the hall's ground floor, glazed on the side and toward the road, with a raised verandah behind
+  b.b('dark',8.5,0,-12.6,18,4.4,1.2);
+  [[-.3,-3.9],[-4.5,-8.1],[-8.7,-12.2]].forEach(function(s,j){b.b(j===1?'winB':'winD',17.96,.45,s[1],18.06,4.0,s[0]);
+    for(var q=0;q<5;q++)b.b('dark',18.04,.45+q*.89,s[1],18.12,.51+q*.89,s[0]);for(q=0;q<=4;q++){var zq=s[1]+(s[0]-s[1])*q/4;b.b('dark',18.04,.45,zq-.03,18.12,4.0,zq+.03);}});
+  b.b('winD',11.4,.45,1.16,17.4,4.0,1.26);for(i=0;i<5;i++)b.b('dark',11.4,.45+i*.89,1.24,17.4,.51+i*.89,1.32);for(i=0;i<=6;i++)b.b('dark',11.37+i,.45,1.24,11.43+i,4.0,1.32);
+  b.b('door',9.1,0,1.18,10.9,2.9,1.28);b.b('white',8.95,2.9,1.18,11.05,3.05,1.34);
+  b.b('chStone',14,0,-22,18.1,1.0,-12.6);b.b('cream',8.5,1.0,-22,14.2,4.4,-12.6);
+  [-15.1,-19.9].forEach(function(z,j){b.b(lit(150+j),14.18,2.0,z-.5,14.26,3.3,z+.5);b.b('white',14.16,1.9,z-.6,14.3,2.0,z+.6);});
+  [-12.9,-17.3,-21.7].forEach(function(z){b.b('white',17.6,0,z-.2,18,4.4,z+.2);});
+  b.b('chGrey',17.7,1.0,-21.5,17.9,1.85,-13.1);b.b('white',17.6,1.85,-21.7,18.0,1.95,-12.8);for(z=-13.4;z>-21.3;z-=.45)b.b('white',17.66,1.05,z-.04,17.94,1.8,z+.04);
+  var z;
+  // cornice, first floor, and the corner tower with its arched windows, toothed parapet and pinnacles
+  b.b('white',8.3,4.4,-22.2,18.3,4.85,1.45);b.b('chGrey',8.5,4.85,-22,17.6,8.3,1.2);
+  b.b('chGrey',11.5,4.85,-5.3,18,10.4,1.2);
+  [[.8,1.35],[-2.25,-1.95],[-5.35,-4.95]].forEach(function(s){b.b('white',17.95,4.85,s[1]<s[0]?s[1]:s[0],18.28,10.4,s[1]<s[0]?s[0]:s[1]);});
+  b.b('white',11.4,4.85,1.15,11.8,10.4,1.5);b.b('white',14.6,4.85,1.15,14.9,10.4,1.45);
+  [-.6,-3.7].forEach(function(z2){archWin(b,roundShape,18.0,6.3,z2,1.15,2.3,.12,'winC','white',0,R2);});
+  [13.2,16.4].forEach(function(x2){archWin(b,roundShape,x2,6.3,1.2,1.15,2.3,.12,'winC','white');});
+  b.b('white',11.3,10.4,-5.5,18.2,10.75,1.4);
+  for(i=0;i<16;i++)b.b('white',11.42+i*.42,10.75,1.05,11.64+i*.42,11.18,1.4);for(i=0;i<16;i++)b.b('white',17.85,10.75,1.3-i*.42,18.2,11.18,1.08-i*.42);
+  [[11.8,.9],[17.7,.9],[11.8,-5.0],[17.7,-5.0]].forEach(function(p){pinnacle(b,p[0],10.75,p[1],.95);});
+  // the side front: the name on a balustrade, curved shoulders, pilasters, the window, the gable and its domed turret
+  b.b('chGrey',17.6,4.85,-18.3,18.15,5.75,-5.3);b.b('white',17.6,5.75,-18.3,18.2,5.85,-5.3);
+  for(z=-5.7;z>-18;z-=.36){if(z<-8.4&&z>-15.1)continue;b.b('white',18.12,4.95,z-.05,18.19,5.68,z+.05);}
   var nt2=textTex('LITTLE LAMB CHURCH','#e8392a',120,true),nm2=nm.clone();nm2.map=nt2;nm2.emissiveMap=nt2;sign.push(nm2);
-  var tp2=new THREE.Mesh(new THREE.PlaneGeometry(6.2,6.2/nt2.userData.aspect),nm2);tp2.position.set(15,5.45,1.02);g.push(tp2);
-  b.b('chGrey',9.6,4.6,.3,19.5,5.35,.95);b.b('white',9.6,5.35,.25,19.5,5.45,1.0);
-  var pd=new THREE.Shape();pd.moveTo(-2.6,0);pd.lineTo(2.6,0);pd.lineTo(2.6,1.1);pd.quadraticCurveTo(1.7,1.2,1.5,1.9);pd.lineTo(0,2.55);pd.lineTo(-1.5,1.9);pd.quadraticCurveTo(-1.7,1.2,-2.6,1.1);pd.lineTo(-2.6,0);
-  b.g('chGrey',new THREE.ExtrudeGeometry(pd,{depth:.35,bevelEnabled:false}),15,8.6,.2);
-  var ro=new THREE.Shape();ro.moveTo(-5.4,0);ro.lineTo(0,2.9);ro.lineTo(5.4,0);ro.lineTo(5.4,.3);ro.lineTo(0,3.2);ro.lineTo(-5.4,.3);ro.lineTo(-5.4,0);b.g('white',new THREE.ExtrudeGeometry(ro,{depth:.3,bevelEnabled:false}),15,8.6,.1);
-  b.g('chGrey',new THREE.ExtrudeGeometry((function(){var s=new THREE.Shape();s.moveTo(-5.4,0);s.lineTo(0,2.9);s.lineTo(5.4,0);s.lineTo(-5.4,0);return s;})(),{depth:14,bevelEnabled:false}),15,8.6,-14.1);
-  archWin(b,roundShape,15,7.2,.56,1.0,2.4,.12,'pink','white');
-  [13.3,16.7].forEach(function(xx){b.b('white',xx-.2,4.6,.3,xx+.2,10.2,.5);});
-  b.b('dark',14.2,11.5,-.6,15.8,12.6,.6);b.b('white',14.0,12.6,-.8,16.0,12.8,.8);b.g('white',new THREE.SphereGeometry(.6,18,9,0,Math.PI*2,0,Math.PI/2),15,12.8,0);
-  b.g('white',new THREE.CylinderGeometry(.16,.22,.5,12),15,13.6,0);b.b('white',14.95,13.8,-.05,15.05,14.6,.05);b.b('white',14.7,14.2,-.05,15.3,14.3,.05);
-  b.b('chGrey',8,4.6,-14,12.6,10.4,.8);b.b('white',8,4.6,.75,8.35,10.4,1.0);b.b('white',12.25,4.6,.75,12.6,10.4,1.0);
-  archWin(b,roundShape,9.4,6.6,.82,.9,2.0,.1,lit(140),'white');archWin(b,roundShape,11.2,6.6,.82,.9,2.0,.1,lit(141),'white');
-  b.b('white',7.9,10.4,-14.1,12.7,10.75,1.1);for(i=0;i<11;i++)b.b('white',8.0+i*.44,10.75,.8,8.22+i*.44,11.15,1.1);
-  [[8.3,.8],[12.3,.8],[8.3,-13.7]].forEach(function(p){pinnacle(b,p[0],10.75,p[1],.9);});
-  b.b('chGrey',19.5,4.6,-14,22,9.6,-2.2);b.b('cream',18.6,.4,-14,22,4.2,-2.2);
-  [18.7,21.7].forEach(function(xx){b.b('white',xx,0,.3,xx+.3,9.6,.6);});b.b('white',18.6,5.0,.25,22,5.15,.55);for(i=0;i<9;i++)b.b('white',18.8+i*.35,4.6,.35,18.88+i*.35,5.0,.45);
-  b.b('white',18.5,9.6,-14.1,22.1,9.9,.7);[[18.8,.4],[21.8,.4]].forEach(function(p){pinnacle(b,p[0],9.9,p[1],.85);});
-  archWin(b,roundShape,20.6,6.2,-2.18,.8,1.8,.08,lit(142),'white');
-  // compound wall with a planted strip, and the gate portal
-  plot(b,-27.5,23,-15,wz,[8.6,11.6],1.35,'stoneLt','white');
-  b.b('dark',7.9,0,wz-.5,8.6,3.4,wz+.2);b.b('dark',11.6,0,wz-.5,12.3,3.4,wz+.2);b.b('dark',7.9,3.4,wz-.5,12.3,3.9,wz+.2);
-  b.b('door',8.65,.05,wz-.2,11.55,2.9,wz-.1);b.b('dark',8.65,2.4,wz-.22,11.55,2.9,wz-.08);
-  b.b('grass',-27,0,wz+.05,7.8,.35,wz+.8);b.b('white',-27,0,wz+.8,7.8,.4,wz+.9);
-  b.b('pave',8.6,0,1.2,11.6,.04,wz-.2);
-  palm(b,-25,wz-1.6,10,17);palm(b,-12,wz-1.8,9,19);palm(b,3.5,wz-1.6,10.5,23);palm(b,21.5,wz-1.8,9.5,29);
+  var tp2=new THREE.Mesh(new THREE.PlaneGeometry(6.4,6.4/nt2.userData.aspect),nm2);tp2.position.set(18.21,5.3,-11.75);tp2.rotation.y=R2;g.push(tp2);
+  b.b('chGrey',17.6,5.85,-13.3,17.95,10.7,-10.2);
+  [1,-1].forEach(function(sg){var sh=new THREE.Shape();sh.moveTo(sg*1.55,0);sh.lineTo(sg*3.4,0);sh.lineTo(sg*3.4,.55);sh.quadraticCurveTo(sg*2.1,.7,sg*1.9,1.7);sh.lineTo(sg*1.55,2.3);sh.lineTo(sg*1.55,0);
+    b.g('chGrey',new THREE.ExtrudeGeometry(sh,{depth:.35,bevelEnabled:false}),17.6,5.85,-11.75,R2);});
+  [-10.2,-13.3].forEach(function(z2){b.b('white',17.95,5.85,z2-.15,18.25,10.95,z2+.15);});
+  archWin(b,roundShape,17.96,7.0,-11.75,.9,2.7,.1,'winC','white',0,R2);
+  var tri=new THREE.Shape();tri.moveTo(-6.5,0);tri.lineTo(6.5,0);tri.lineTo(0,2.9);tri.lineTo(-6.5,0);b.g('chGrey',new THREE.ExtrudeGeometry(tri,{depth:9.1,bevelEnabled:false}),8.5,8.3,-11.75,R2);
+  var ro=new THREE.Shape();ro.moveTo(-6.8,0);ro.lineTo(0,3.0);ro.lineTo(6.8,0);ro.lineTo(6.8,.3);ro.lineTo(0,3.3);ro.lineTo(-6.8,.3);ro.lineTo(-6.8,0);b.g('white',new THREE.ExtrudeGeometry(ro,{depth:.35,bevelEnabled:false}),17.6,8.3,-11.75,R2);
+  b.b('chGrey',15.9,11.0,-12.45,17.5,12.2,-11.05);b.b('white',15.7,12.2,-12.65,17.7,12.45,-10.85);b.g('white',new THREE.SphereGeometry(.62,18,9,0,Math.PI*2,0,Math.PI/2),16.7,12.45,-11.75);
+  b.g('white',new THREE.CylinderGeometry(.16,.22,.5,12),16.7,13.3,-11.75);b.b('white',16.65,13.5,-11.8,16.75,14.3,-11.7);b.b('white',16.65,13.9,-12.05,16.75,14.0,-11.45);
+  // the back tower
+  b.b('chGrey',14.8,4.85,-22,18,9.8,-18.3);[[-18.6,-18.3],[-22,-21.7]].forEach(function(s){b.b('white',17.95,4.85,s[0],18.25,9.8,s[1]);});
+  archWin(b,roundShape,18.0,6.3,-20.15,1.0,2.2,.1,lit(142),'white',0,R2);
+  b.b('white',14.6,9.8,-22.2,18.2,10.15,-18.1);for(i=0;i<9;i++)b.b('white',17.85,10.15,-18.25-i*.42,18.2,10.55,-18.47-i*.42);
+  [[15.1,-18.6],[17.7,-18.6],[17.7,-21.7]].forEach(function(p){pinnacle(b,p[0],10.15,p[1],.85);});
+  // compound wall with a planted strip, the gate portal in front of the hall, and a side garden
+  plot(b,-29.5,30,-23,wz,[9.4,12.6],1.35,'stoneLt','white');
+  b.b('dark',8.7,0,wz-.5,9.4,3.4,wz+.2);b.b('dark',12.6,0,wz-.5,13.3,3.4,wz+.2);b.b('dark',8.7,3.4,wz-.5,13.3,3.9,wz+.2);
+  b.b('door',9.45,.05,wz-.2,12.55,2.9,wz-.1);b.b('dark',9.45,2.4,wz-.22,12.55,2.9,wz-.08);
+  b.b('grass',-29,0,wz+.05,8.6,.35,wz+.8);b.b('white',-29,0,wz+.8,8.6,.4,wz+.9);
+  b.b('pave',9.4,0,1.2,12.6,.04,wz-.2);b.b('pave',18.1,0,-22,20.6,.04,wz-.2);
+  palm(b,-24,wz-1.6,10,17);palm(b,-6,wz-1.8,9,19);palm(b,23.5,wz-2.2,10.5,23);palm(b,26.8,-5.5,9.5,29);palm(b,25,-17,10,43);
+}
+/* ---- Villa Biradar: ground + three, grey panels split by gold lines of light ---- */
+function bBiradar(b,g,P,wz){
+  var i,z,cyl=function(){return new THREE.CylinderGeometry(.06,.06,.02,12);};
+  b.b('stoneDk',-3.95,0,-14.2,3.95,.3,1.8);
+  // the left tower: dark stacked stone, two grey panels with gold light lines, a tall glass slot, wall lights
+  b.b('stoneDk',-3.9,.3,-14,0,13.1,0);
+  b.b('greyP',-3.43,10.28,0,0,13.1,.45);b.b('led',-.84,10.28,.45,-.78,13.1,.48);
+  [-2.2,-2.5].forEach(function(x){b.g('down',cyl(),x,10.27,.22);});
+  b.b('winB',-2.7,8.1,-.05,-1.75,9.95,.03);
+  b.b('dark',-.95,9.35,0,-.79,9.6,.1);b.b('led',-.93,9.26,.03,-.81,9.34,.08);b.b('led',-.93,9.61,.03,-.81,9.69,.08);
+  b.b('greyP',-3.86,2.92,0,-.85,8.09,.5);b.b('led',-3.02,2.92,.5,-2.96,8.09,.53);
+  b.b('woodDk',-3.13,.3,0,0,2.92,.2);b.b('stoneDk',-3.9,.3,0,-3.13,2.92,.24);
+  b.b('dark',-2.42,1.95,.2,-2.24,2.25,.3);b.b('led',-2.4,2.25,.22,-2.26,2.32,.28);b.b('led',-2.4,1.88,.22,-2.26,1.95,.28);
+  // the right-hand stack: porch, then three floors of balconies
+  b.b('woodDk',0,.3,-14,3.9,3.6,-3);b.b('white',.12,.3,-3.02,.9,2.6,-2.94);b.b('door',.2,.3,-3.04,.82,2.5,-2.9);
+  b.b('white',3.25,.3,.9,3.55,3.6,1.2);
+  b.b('white',-.87,3.6,-14,4.08,3.9,1.6);b.b('led',.2,3.585,1.38,3.9,3.6,1.42);[.7,1.9,3.1].forEach(function(x){b.g('down',cyl(),x,3.59,.4);b.g('down',cyl(),x,3.59,-1.4);});
+  b.b('stoneDk',0,3.9,-14,3.9,6.2,-1.2);winR(b,.25,3.9,.95,5.7,-1.2,{g:lit(160),f:'dark'});winR(b,1.4,4.6,3.5,5.7,-1.2,{g:lit(161),f:'dark',m:2});
+  b.b('woodDk',-.87,5.95,-1.2,3.9,6.2,1.4);b.b('led',.2,5.94,-1,3.8,5.95,-.96);[.7,1.9,3.1].forEach(function(x){b.g('down',cyl(),x,5.94,.3);});
+  railX(b,-.87,3.8,3.9,.65,1.35);
+  b.b('white',-.36,6.2,-14,3.86,6.65,1.5);b.b('white',-.36,8.85,-14,3.86,9.3,1.5);b.b('white',-.36,6.65,-1.4,.02,8.85,1.5);b.b('white',3.5,6.65,-1.4,3.86,8.85,1.5);
+  b.b('stoneDk',0,6.65,-14,3.5,8.85,-1.4);winR(b,.3,6.65,1.0,8.3,-1.4,{g:lit(162),f:'dark'});winR(b,1.4,7.2,3.3,8.3,-1.4,{g:lit(163),f:'dark',m:2});
+  b.b('woodDk',.02,8.6,-1.4,3.48,8.85,1.4);b.b('led',.1,8.59,-.2,3.4,8.6,-.16);b.b('led',.1,8.59,.9,3.4,8.6,.94);[.7,1.8,2.9].forEach(function(x){b.g('down',cyl(),x,8.59,.35);});
+  railX(b,.02,3.48,6.65,.75,1.2);
+  b.b('stoneDk',0,9.3,-14,3.43,10.8,-1.5);winR(b,.4,9.3,3.0,10.5,-1.5,{g:lit(164),f:'dark',m:3});b.b('led',.1,10.5,-1.45,3.3,10.53,-1.4);
+  b.b('white',0,10.8,-14,3.6,11.15,1.3);[.6,1.8,3.0].forEach(function(x){b.g('down',cyl(),x,10.79,.4);});
+  railX(b,0,3.6,9.3,.45,1.25);for(i=0;i<3;i++)b.b('white',0,11.22+i*.1,1.15,3.6,11.26+i*.1,1.22);
+  for(i=0;i<3;i++){z=-4-i*3.4;b.b(lit(170+i),3.88,4.3,z-.6,3.96,5.6,z+.6);b.b(lit(173+i),3.88,7.1,z-.6,3.96,8.4,z+.6);}
+  // compound wall: white, with up-and-down lights, the name plate and a timber gate
+  plot(b,-5.6,5.6,-14.8,wz,[1.5,3.4],1.9,'white','white');
+  [-1.46,-.7].forEach(function(x){b.b('dark',x-.07,1.08,wz,x+.07,1.32,wz+.09);b.b('led',x-.05,1.32,wz+.01,x+.05,1.38,wz+.08);b.b('led',x-.05,1.02,wz+.01,x+.05,1.08,wz+.08);});
+  b.b('dark',.12,1.2,wz,1.4,1.72,wz+.05);
+  var nt=textTex('VILLA BIRADAR','#d9b46a',90,false),nm=new THREE.MeshStandardMaterial({map:nt,transparent:true,roughness:.5,emissive:0xd9a64a,emissiveMap:nt,emissiveIntensity:.35,depthWrite:false});
+  var tp=new THREE.Mesh(new THREE.PlaneGeometry(1.15,1.15/nt.userData.aspect),nm);tp.position.set(.76,1.46,wz+.06);g.push(tp);
+  for(i=0;i<10;i++)b.b('woodDk',1.54+i*.186,.1,wz-.1,1.68+i*.186,1.85,wz-.04);b.b('dark',1.5,.05,wz-.12,3.4,.12,wz-.02);b.b('dark',1.5,1.85,wz-.12,3.4,1.92,wz-.02);
+  b.b('tile',-.87,0,1.8,3.4,.05,wz-.2);b.b('grass',-5.4,0,1.8,-1.9,.3,wz-.3);
+}
+/* ---- Apple Hospitals: twin round towers either side of a stepped arch, from the site photograph ---- */
+function tower(b,cx,cz,r,H,seed){
+  var i,a,R2=Math.PI/2;
+  b.g('stucco',new THREE.CylinderGeometry(r,r,H,40,1,true),cx,H/2,cz);
+  // tall slit windows: glass, then a white reveal, on the part of the drum that faces the road
+  [-.42,.42,-1.15,1.15].forEach(function(a0,j){var px=cx+Math.sin(a0)*(r+.01),pz=cz+Math.cos(a0)*(r+.01),hh=j<2?6.2:5.4,y0=j<2?3.9:4.3;
+    b.g('white',new THREE.BoxGeometry(.78,hh+.16,.08),px,y0+hh/2,pz,a0);b.g(lit(seed+j),new THREE.BoxGeometry(.56,hh,.1),px+Math.sin(a0)*.02,y0+hh/2,pz+Math.cos(a0)*.02,a0);
+    for(var q=1;q<5;q++)b.g('dark',new THREE.BoxGeometry(.58,.04,.12),px+Math.sin(a0)*.03,y0+q*hh/5,pz+Math.cos(a0)*.03,a0);});
+  b.g('white',new THREE.CylinderGeometry(r+.1,r+.1,.22,40),cx,10.45,cz);
+  [-.5,.5,1.4,-1.4].forEach(function(a0,j){var px=cx+Math.sin(a0)*(r+.01),pz=cz+Math.cos(a0)*(r+.01);
+    b.g('white',new THREE.BoxGeometry(.72,.72,.08),px,11.25,pz,a0);b.g(lit(seed+10+j),new THREE.BoxGeometry(.52,.52,.1),px+Math.sin(a0)*.02,11.25,pz+Math.cos(a0)*.02,a0);});
+  // corbelled teeth under a flared saucer cap
+  var n=Math.round(r*9);for(i=0;i<n;i++){a=i/n*Math.PI*2;b.g('white',new THREE.BoxGeometry(.2,.34,.2),cx+Math.sin(a)*(r+.08),H-.2,cz+Math.cos(a)*(r+.08),a);}
+  b.g('white',new THREE.CylinderGeometry(r+.2,r+.05,.2,40),cx,H+.02,cz);
+  b.g('stucco',new THREE.CylinderGeometry(r+.95,r+.25,.5,48),cx,H+.37,cz);
+  b.g('white',new THREE.TorusGeometry(r+.93,.16,8,56),cx,H+.62,cz,0,R2);
+  b.g('stucco',new THREE.CylinderGeometry(r+.9,r+.9,.12,48),cx,H+.66,cz);
+  for(i=0;i<Math.round(r*14);i++){a=i/Math.round(r*14)*Math.PI*2;b.g('white',new THREE.BoxGeometry(.14,.18,.14),cx+Math.sin(a)*(r+.72),H+.14,cz+Math.cos(a)*(r+.72),a);}
+}
+function ringArch(b,k,x,y,z,wo,ho,wi,hi,d){var o=roundShape(wo,ho),h=roundShape(wi,hi,true);
+  o.holes.push(new THREE.Path(h.getPoints(28).map(function(p){return new THREE.Vector2(p.x,p.y);})));
+  b.g(k,new THREE.ExtrudeGeometry(o,{depth:d,bevelEnabled:false,curveSegments:20}),x,y,z);}
+function bApple(b,g,P,wz,sign){
+  var i,R2=Math.PI/2;
+  // the long body behind the front, on a narrow deep plot
+  b.b('stucco',-11.5,0,-22,11.5,11.4,-1.2);b.b('white',-11.7,11.4,-22.2,11.7,11.75,-1);
+  for(var f=0;f<3;f++)for(i=0;i<5;i++){var z=-4-i*3.6,y=1.2+f*3.4;[-11.5,11.5].forEach(function(sx,s){b.b(lit(300+f*9+i+s*40),sx+(s?.02:-.08),y,z-.55,sx+(s?.08:-.02),y+1.5,z+.55);});}
+  // left and right wings: arched balcony openings on two floors
+  [[-11.5,-7.4],[7.2,11.5]].forEach(function(w,j){b.b('stucco',w[0],0,-1.2,w[1],11.4,.6);b.b('white',w[0]-.1,11.2,-1.3,w[1]+.1,11.5,.8);b.b('white',w[0],3.2,.55,w[1],3.45,.9);
+    [4.6,8.0].forEach(function(y,k){var cx=(w[0]+w[1])/2;archWin(b,j?roundShape:archShape,cx,y,.6,2.4,2.6,.16,k?'dark':lit(320+j),'white');b.b('white',cx-1.5,y-.2,.5,cx+1.5,y,1.0);});});
+  // the centre: a stepped round arch, twin columns, a tall fanlit window
+  b.b('stucco',-3.6,0,-1.2,3.6,11.2,.9);
+  ringArch(b,'stucco',0,3.75,.9,6.4,8.2,5.7,7.85,.18);ringArch(b,'white',0,3.75,.9,5.7,7.85,5.1,7.45,.34);ringArch(b,'stucco',0,3.75,.9,5.1,7.45,4.5,7.0,.26);
+  ringArch(b,'white',0,3.75,.9,4.5,7.0,3.9,6.55,.16);
+  b.g('winC',new THREE.ShapeGeometry(roundShape(3.9,6.55),20),0,3.75,.93);
+  for(i=1;i<4;i++)b.b('dark',-1.95+i*.975-.035,3.75,.92,-1.95+i*.975+.035,8.35,1.0);
+  for(i=1;i<6;i++)b.b('dark',-1.95,3.75+i*.77-.035,.92,1.95,3.75+i*.77+.035,1.0);
+  for(i=0;i<5;i++){var an=i/4*Math.PI;b.g('dark',new THREE.BoxGeometry(.06,1.9,.08),Math.cos(an)*.95,8.6+Math.sin(an)*.95,.97,0,0,an-R2);}
+  b.g('dark',new THREE.TorusGeometry(1.0,.045,6,24,Math.PI),0,8.6,.97);
+  [-2.35,-2.05,2.05,2.35].forEach(function(x){b.g('white',new THREE.CylinderGeometry(.14,.16,5.4,14),x,6.45,1.35);b.b('white',x-.2,9.15,1.15,x+.2,9.4,1.55);b.b('white',x-.2,3.72,1.15,x+.2,3.9,1.55);});
+  // cornice with dentils, a floodlight, and the crown of three loops
+  b.b('white',-3.8,10.5,-1.2,3.8,10.72,1.35);for(i=0;i<22;i++)b.b('white',-3.55+i*.338,10.2,1.02,-3.42+i*.338,10.5,1.3);
+  b.b('white',-4.0,10.72,-1.2,4.0,11.05,1.55);b.b('stucco',-3.7,11.05,-1.2,3.7,11.9,.95);b.b('white',-3.85,11.9,-1.3,3.85,12.15,1.1);
+  [[-1.3,.95,.3],[1.3,.95,.3],[0,1.25,.1]].forEach(function(l){b.g('white',new THREE.TorusGeometry(l[1],.13,8,28,Math.PI),l[0],12.15,l[2]);b.g('white',new THREE.TorusGeometry(l[1]-.3,.07,6,24,Math.PI),l[0],12.15,l[2]);});
+  b.b('dark',.35,12.2,.7,.95,12.55,1.05);b.b('led',.4,12.25,1.05,.9,12.5,1.08);
+  tower(b,-5.3,1.3,2.35,12.2,330);tower(b,5.2,1.3,2.05,12.2,340);
+  // the name over the entrance, then the canopy and a light board
+  var c=document.createElement('canvas'),x=c.getContext('2d');c.width=1024;c.height=200;
+  x.font='500 132px Jost, "Avenir Next", sans-serif';x.textBaseline='middle';x.lineWidth=10;x.strokeStyle='#f4f1e6';
+  var w1=x.measureText('apple ').width,w2=x.measureText('hospitals').width,x0=(1024-w1-w2)/2;
+  x.strokeText('apple',x0,92);x.fillStyle='#3f8a36';x.fillText('apple',x0,92);x.strokeText('hospitals',x0+w1,92);x.fillStyle='#6b2f2f';x.fillText('hospitals',x0+w1,92);
+  x.font='400 34px Jost, sans-serif';x.fillStyle='#4b3a33';x.textAlign='center';x.fillText('a Multi-Speciality Hospital',512+60,168);
+  var st=new THREE.CanvasTexture(c);st.encoding=THREE.sRGBEncoding;st.anisotropy=ANISO;
+  var sm=new THREE.MeshStandardMaterial({map:st,transparent:true,roughness:.5,emissive:0xffffff,emissiveMap:st,emissiveIntensity:.12,depthWrite:false});sign.push(sm);
+  var sp=new THREE.Mesh(new THREE.PlaneGeometry(5.2,1.02),sm);sp.position.set(.4,3.25,1.62);g.push(sp);
+  b.b('white',-3.5,2.72,.9,3.9,3.72,1.58);
+  b.b('stucco',-11.6,2.55,-1.2,11.6,2.95,5.4);b.b('dark',-11.6,2.5,-1.2,11.6,2.56,5.35);
+  b.b('white',-2.8,1.55,5.35,6.8,2.5,5.5);var bt=canvasTex(512,64,function(q,W,H){q.fillStyle='#eef0ea';q.fillRect(0,0,W,H);q.fillStyle='#7aa860';q.font='600 30px Jost, sans-serif';q.fillText('apple',W*.62,40);
+    q.fillStyle='rgba(60,70,70,.35)';for(var k=0;k<14;k++)q.fillRect(W*.74+(k%2)*56,10+Math.floor(k/2)*7,50,2);for(k=0;k<6;k++)q.fillRect(14+k*52,14,40,36);});
+  var bm=new THREE.Mesh(new THREE.PlaneGeometry(9.5,.9),new THREE.MeshStandardMaterial({map:bt,roughness:.6,emissive:0xffffff,emissiveMap:bt,emissiveIntensity:.1}));bm.position.set(2,2.02,5.51);g.push(bm);sign.push(bm.material);
+  [[-10.8,1.8],[-4.2,1.8],[5.2,1.8],[10.8,1.8]].forEach(function(p){b.b('door',p[0]-.3,0,p[1]+3.2,p[0]+.3,2.5,p[1]+3.6);});
+  b.b('winD',-7,0,-.9,7,2.4,-.8);b.b('dark',-7,2.4,-.9,7,2.55,-.75);
+  [0,1,2,3].forEach(function(i2){b.g('down',new THREE.CylinderGeometry(.08,.08,.02,12),-8+i2*5.3,2.54,3.2);});
+  // gates at the road
+  plot(b,-12.5,12.5,-22.6,wz,[-9.5,9.5],1.4,'stucco','white');
+  for(i=0;i<46;i++){var gx=-9.4+i*.41;b.b('dark',gx,.05,wz-.16,gx+.04,1.8,wz-.1);}b.b('dark',-9.5,1.75,wz-.18,9.5,1.82,wz-.08);b.b('dark',-9.5,.05,wz-.18,9.5,.12,wz-.08);
+  b.b('pave',-11.8,0,.6,11.8,.04,wz-.2);palm(b,-11.2,wz-1.2,8.6,51);
 }
 /* ---- Noble School of Nursing: ground + four, from the elevation drawing ---- */
 function bNoble(b,g,P,wz){
   var i,k,px=function(v){return (v-687)/31.06;},FL=[0,1.03,4.44,7.88,11.35,14.83,18.12];
   b.b('teal',-18,0,-14,18,FL[1],0);b.b('nCream',-18,FL[1],-14,18,FL[6],0);
-  b.b('nCream',-18,FL[6],-14,18,FL[6]+1.13,.05);b.b('maroon',-18.05,FL[6]+1.13,-14.05,18.05,FL[6]+1.25,.12);
+  b.b('nCream',-18,FL[6],-14,18,FL[6]+1.13,.05);[[-18.05,-14.05,18.05,-13.75],[-18.05,-.18,18.05,.12],[-18.05,-14.05,-17.75,.12],[17.75,-14.05,18.05,.12]].forEach(function(r){b.b('maroon',r[0],FL[6]+1.13,r[1],r[2],FL[6]+1.25,r[3]);});
   for(k=2;k<=6;k++)b.b('maroon',-18.06,FL[k]-.06,-14.06,18.06,FL[k]+.06,.12);
   // parapet: interlocked diamonds and framed panels
   var pc=FL[6]+.56,dz=.12;
@@ -1465,12 +1615,182 @@ function bNoble(b,g,P,wz){
   b.b('pave',-3,0,.2,3,.04,wz-.2);b.b('pave',px(636.5)-1,0,1.3,px(1211)+1,.04,2.4);
   palm(b,-18.8,wz-1.5,10,31);palm(b,18.6,wz-1.5,11,37);palm(b,-8,wz-1.5,8.5,41);
 }
-/* the four of them, placed along the street either side of the story's house */
+/* ---- the plan-only sites, given a body: facades follow the drawings (and the Little Flower render) ---- */
+function signTex(lines,col,bg,px,font,border){
+  var c=document.createElement('canvas'),x=c.getContext('2d'),f=font||('700 '+px+'px Georgia, "Times New Roman", serif');x.font=f;
+  var w=0;lines.forEach(function(l){w=Math.max(w,x.measureText(l).width);});w=Math.ceil(w+px*1.2);var h=Math.ceil(lines.length*px*1.22+px*.7);c.width=w;c.height=h;x=c.getContext('2d');
+  if(bg){x.fillStyle=bg;x.fillRect(0,0,w,h);}if(border){x.strokeStyle=border;x.lineWidth=px*.08;x.strokeRect(px*.12,px*.12,w-px*.24,h-px*.24);}
+  x.font=f;x.textAlign='center';x.textBaseline='middle';x.fillStyle=col;lines.forEach(function(l,i){x.fillText(l,w/2,px*.35+px*.61+i*px*1.22);});
+  var t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;t.anisotropy=ANISO;t.userData={aspect:w/h};return t;}
+function signMesh(t,wd,x,y,z,g,sign,glow,ry){var m=new THREE.MeshStandardMaterial({map:t,transparent:true,roughness:.55,emissive:glow||0xffffff,emissiveMap:t,emissiveIntensity:.08,depthWrite:false});
+  var o=new THREE.Mesh(new THREE.PlaneGeometry(wd,wd/t.userData.aspect),m);o.position.set(x,y,z);if(ry)o.rotation.y=ry;g.push(o);if(sign)sign.push(m);return o;}
+function sideWins(b,x,z0,z1,y,n,seed,h){for(var i=0;i<n;i++){var z=z0+(z1-z0)*(i+.5)/n,s=x>0?1:-1;b.b(lit(seed+i),x-.04*s,y,z-.55,x+.05*s,y+(h||1.3),z+.55);b.b('white',x-.02*s,y-.1,z-.65,x+.1*s,y,z+.65);}}
+function gateSlats(b,x0,x1,wz,h,k){var n=Math.round((x1-x0)/.2);for(var i=0;i<n;i++){var gx=x0+.04+i*(x1-x0)/n;b.b(k||'dark',gx,.1,wz-.2,gx+.09,h,wz-.12);}b.b('dark',x0,h-.06,wz-.22,x1,h,wz-.1);b.b('dark',x0,.08,wz-.22,x1,.16,wz-.1);}
+
+/* Little Flower School of Nursing: balconies either side of a stone and glass entrance tower */
+function bLittleFlower(b,g,P,wz,sign){
+  var i,k,W=20.55,D=-17.7,Y0=.6,FH=3.35,NB=6,XI=3.0,XO=W-1.0,bay=(XO-XI)/NB,TOP=Y0+4*FH;
+  b.b('white',-W-.2,0,D-.2,W+.2,Y0,1.0);
+  b.b('lfWall',-W,Y0,D,W,TOP,-1.0);
+  for(k=1;k<=4;k++){var ys=Y0+k*FH;b.b('white',-W,ys-.26,D,W,ys,.06);}
+  for(k=0;k<4;k++){var y0=Y0+k*FH;
+    [-1,1].forEach(function(sd){for(i=0;i<NB;i++){var cx=sd*(XI+(i+.5)*bay);
+      b.b('door',cx-1.02,y0,-1.06,cx-.22,y0+2.25,-.98);b.b('white',cx-1.1,y0+2.25,-1.08,cx-.14,y0+2.36,-.94);
+      winR(b,cx+.02,y0+1.0,cx+1.02,y0+2.25,-1.0,{g:lit(700+k*20+i+(sd>0?10:0)),f:'white',m:1,t:.07});
+      b.g('down',new THREE.CylinderGeometry(.06,.06,.02,10),cx,y0+FH-.27,-.45);}});}
+  for(i=0;i<=NB;i++)[-1,1].forEach(function(sd){var x=sd*(XI+i*bay);b.b('white',x-.17,Y0,-1.0,x+.17,TOP,.12);});
+  for(k=1;k<=3;k++){var yr=Y0+k*FH;[[-XO,-XI],[XI,XO]].forEach(function(s){b.b('railBars',s[0],yr,-.03,s[1],yr+1.0,-.01);b.b('dark',s[0],yr+1.0,-.07,s[1],yr+1.06,.03);b.b('dark',s[0],yr+.06,-.05,s[1],yr+.1,.01);});}
+  // slate end panels, charcoal flanks and the entrance tower
+  [-1,1].forEach(function(sd){b.b('slate2',sd>0?XO:-W-.25,0,D-.25,sd>0?W+.25:-XO,TOP+.9,.35);b.b('slate2',sd>0?2.6:-3.0,0,-1.0,sd>0?3.0:-2.6,TOP+.9,.55);});
+  b.b('stoneTile',-2.6,0,-1.0,-1.5,TOP+1.3,1.3);b.b('stoneTile',1.5,0,-1.0,2.6,TOP+1.3,1.3);b.b('lfWall',-1.5,0,-1.0,1.5,TOP+1.3,1.1);
+  b.b('winB',-1.5,Y0+3.6,1.1,1.5,TOP+.9,1.2);
+  [-1.5,-.5,.5,1.5].forEach(function(x){b.b('dark',x-.05,Y0+3.6,1.12,x+.05,TOP+.9,1.26);});
+  for(i=0;i<=9;i++){var yg=Y0+3.6+i*(TOP+.9-Y0-3.6)/9;b.b('dark',-1.5,yg-.04,1.12,1.5,yg+.04,1.26);}
+  b.b('winD',-1.35,Y0,1.2,1.35,Y0+2.8,1.26);b.b('dark',-.04,Y0,1.24,.04,Y0+2.8,1.3);b.b('dark',-1.45,Y0+2.8,1.15,1.45,Y0+3.05,1.32);
+  b.b('white',-2.9,Y0+3.15,1.0,2.9,Y0+3.4,2.7);b.g('down',new THREE.CylinderGeometry(.08,.08,.02,12),-1,Y0+3.14,2);b.g('down',new THREE.CylinderGeometry(.08,.08,.02,12),1,Y0+3.14,2);
+  b.b('white',-3.6,TOP+1.3,-1.4,3.6,TOP+3.7,1.5);b.b('slate2',-3.7,TOP+3.7,-1.5,3.7,TOP+3.9,1.6);b.b('slate2',-3.7,TOP+1.15,-1.5,3.7,TOP+1.3,1.6);
+  signMesh(signTex(['LITTLE FLOWER','SCHOOL OF NURSING'],'#23272c',null,110),6.4,0,TOP+2.5,1.52,g,sign);
+  // parapet, roof boxes, side windows
+  b.b('white',-W,TOP,-.25,W,TOP+.9,.1);b.b('white',-W,TOP,D,W,TOP+.9,D+.25);b.b('white',-W,TOP,D,-W+.25,TOP+.9,0);b.b('white',W-.25,TOP,D,W,TOP+.9,0);
+  b.b('lfWall',-9,TOP,-12,-4.5,TOP+3,-6.5);b.b('lfWall',6,TOP,-11,8.5,TOP+2.2,-8.5);
+  for(k=0;k<4;k++){sideWins(b,-W-.25,-2.5,D+1.5,Y0+k*FH+1.0,4,760+k*9);sideWins(b,W+.25,-2.5,D+1.5,Y0+k*FH+1.0,4,790+k*9);}
+  // compound wall with light pillars and a black gate
+  plot(b,-23,23,D-1.6,wz,[-2.7,2.7],1.25,'lfWall','white');
+  for(var px=-22.6;px<22.7;px+=3.25){if(Math.abs(px)<3.4)continue;b.b('white',px-.26,0,wz-.5,px+.26,1.85,wz+.08);b.b('white',px-.32,1.85,wz-.56,px+.32,1.95,wz+.14);}
+  b.b('lfWall',-3.5,0,wz-.6,-2.7,2.7,wz+.2);b.b('lfWall',2.7,0,wz-.6,3.5,2.7,wz+.2);b.b('white',-3.6,2.7,wz-.7,-2.6,2.85,wz+.3);b.b('white',2.6,2.7,wz-.7,3.6,2.85,wz+.3);
+  gateSlats(b,-2.7,2.7,wz,2.3);
+  b.b('pave',-2.7,0,1.3,2.7,.04,wz-.2);
+  [-16,-9,9,16].forEach(function(x,j){palm(b,x,wz-1.6+(j%2)*.5,6.5+(j%2)*1.2,61+j*3);});
+}
+/* Oxford School of Nursing: a college on three floors and a hostel wing on four */
+function bOxford(b,g,P,wz,sign){
+  var i,k,FH=3.2,Y0=.45,D=-15,XL=-28,XM=4,XR=28;
+  b.b('white',XL-.3,0,D-.3,XR+.3,Y0,.45);
+  b.b('oxWall',XL,Y0,D,XM,Y0+3*FH,0);b.b('oxWall',XM,Y0,D,XR,Y0+4*FH,0);
+  for(k=1;k<=3;k++)b.b('charcoal',XL-.1,Y0+k*FH-.2,D,XM,Y0+k*FH+.06,.14);
+  for(k=1;k<=4;k++)b.b('charcoal',XM,Y0+k*FH-.2,D,XR+.1,Y0+k*FH+.06,.14);
+  // the college wing: shuttered ground floor, then two floors of paired windows
+  for(i=0;i<8;i++){var x0=XL+.4+i*3.55;b.b('shutter',x0+.22,Y0,-.06,x0+3.33,Y0+2.75,.02);b.b('charcoal',x0+.22,Y0+2.75,-.08,x0+3.33,Y0+2.95,.04);b.b('white',x0-.12,Y0,-.1,x0+.22,Y0+FH-.2,.2);}
+  for(k=1;k<=2;k++)for(i=0;i<8;i++){var cx=XL+2.1+i*3.9;winR(b,cx-.65,Y0+k*FH+.85,cx+.65,Y0+k*FH+2.2,0,{g:lit(820+k*10+i),f:'white',m:1,sill:.1});}
+  // the hostel wing: an entrance screen, two windows and shutters below; four windows a floor above
+  b.b('dark',XM+.3,Y0,-.1,XM+3.8,Y0+2.9,.04);for(i=0;i<8;i++)b.b('white',XM+.35+i*.43,Y0,-.12,XM+.42+i*.43,Y0+2.9,.08);for(i=0;i<6;i++)b.b('white',XM+.3,Y0+.2+i*.48,-.12,XM+3.8,Y0+.26+i*.48,.08);
+  [XM+5.5,XM+8.5].forEach(function(cx,j){winR(b,cx-.65,Y0+.85,cx+.65,Y0+2.2,0,{g:lit(860+j),f:'white',m:1,sill:.1});});
+  for(i=0;i<3;i++){var x1=XM+10.8+i*4.3;b.b('shutter',x1,Y0,-.06,x1+4.0,Y0+2.75,.02);b.b('charcoal',x1,Y0+2.75,-.08,x1+4.0,Y0+2.95,.04);}
+  for(k=1;k<=3;k++)for(i=0;i<5;i++){var cx2=XM+2.6+i*4.9;winR(b,cx2-.65,Y0+k*FH+.85,cx2+.65,Y0+k*FH+2.2,0,{g:lit(870+k*10+i),f:'white',m:1,sill:.1});}
+  // parapets, the name, roof boxes, side windows
+  var T1=Y0+3*FH,T2=Y0+4*FH;
+  b.b('white',XL-.1,T1,-.25,XM,T1+.9,.15);b.b('white',XL-.1,T1,D,XM,T1+.9,D+.25);b.b('white',XL-.1,T1,D,XL+.2,T1+.9,0);
+  b.b('white',XM,T2,-.25,XR+.1,T2+1.4,.15);b.b('white',XM,T2,D,XR+.1,T2+1.4,D+.25);b.b('white',XR-.2,T2,D,XR+.1,T2+1.4,0);
+  signMesh(signTex(['OXFORD SCHOOL OF NURSING'],'#6d2b22',null,100),13.5,XM+12,T2+.7,.17,g,sign);
+  b.b('oxWall',XM+.5,T2,-10,XM+4.5,T2+2.8,-5);b.b('oxWall',-6,T1,-10,-2,T1+2.8,-5);
+  for(k=0;k<3;k++)sideWins(b,XL-.02,-2.5,D+1.5,Y0+k*FH+.85,3,900+k*5);for(k=0;k<4;k++)sideWins(b,XR+.02,-2.5,D+1.5,Y0+k*FH+.85,3,920+k*5);
+  plot(b,XL-2,XR+2,D-1.4,wz,[XM,XM+4],1.4,'oxWall','white');gateSlats(b,XM,XM+4,wz,1.9);
+  b.b('pave',XM,0,.45,XM+4,.04,wz-.2);b.b('pave',XL,0,.45,XR,.03,2.2);
+  palm(b,XL-1,wz-1.4,7.5,71);palm(b,XR+1,wz-1.4,8.2,73);palm(b,-10,wz-1.4,6.8,75);
+}
+/* SNS Grand: five floors of open halls behind a glass front, over stilt parking */
+function bSNS(b,g,P,wz,sign){
+  var i,k,FH=3.05,Y0=.45,W=6.1,D=-29,TOP=Y0+6*FH,XG=2.0;
+  b.b('graniteBr',-W-.2,0,D,W+.2,Y0,.6);
+  // stilt: columns, a lobby with a welcome sign, a brick base and a dark soffit
+  [-W+.3,-1.9,XG+.2,W-.3].forEach(function(x){b.b('dark',x-.3,Y0,-.7,x+.3,Y0+FH,-.1);});
+  b.b('dark',-W,Y0+FH-.3,D,W,Y0+FH,.25);b.b('sGrey',-W,Y0,D,W,Y0+FH,D+9);
+  b.b('brick',-W,Y0,-.4,-2.2,Y0+.9,-.1);b.b('winD',XG+.5,Y0,-1.6,W-.6,Y0+2.5,-1.5);b.b('dark',XG+.5,Y0+2.5,-1.62,W-.6,Y0+2.75,-1.45);
+  signMesh(signTex(['WELCOME'],'#f2e6c8','#2a2522',60),1.6,(XG+W)/2,Y0+2.62,-1.43,g,sign,0xffd79a);
+  [-3.5,0].forEach(function(x){b.g('down',new THREE.CylinderGeometry(.08,.08,.02,12),x,Y0+FH-.31,-3);});
+  // five floors: the glass front, then a stone-clad strip with tall glazing
+  b.b('sGrey',-W,Y0+FH,D,W,TOP,-.4);
+  b.b('glassBlue',-W,Y0+FH,-.4,XG,TOP-.25,-.26);
+  [-W+.05,-2.0,XG-.05].forEach(function(x){b.b('dark',x-.07,Y0+FH,-.28,x+.07,TOP-.25,-.14);});
+  for(k=1;k<=6;k++){var y=Y0+k*FH;b.b('dark',-W,y-.12,-.28,XG,y+.12,-.14);if(k<6)b.b('dark',-W,y+1.1,-.28,XG,y+1.15,-.18);}
+  b.b('stoneLt',XG,Y0+FH,-.55,W,TOP+.9,.02);
+  for(k=1;k<=5;k++){var y2=Y0+k*FH;b.b('winB',XG+.8,y2+.35,-.05,W-.8,y2+FH-.35,.05);b.b('white',XG+.7,y2+.25,-.07,W-.7,y2+.35,.1);b.b('white',XG+.7,y2+FH-.35,-.07,W-.7,y2+FH-.25,.1);}
+  // parapet, the headroom tower and a curved sign board
+  b.b('white',-W-.1,TOP-.25,-.5,XG,TOP+.6,-.1);b.b('white',-W-.1,TOP-.25,D,W,TOP+.6,D+.25);b.b('white',-W-.1,TOP-.25,D,-W+.15,TOP+.6,-.1);
+  b.b('stoneLt',XG,TOP+.9,-6,W,TOP+3.9,-.55);for(i=0;i<6;i++)b.b('white',XG-.02,TOP+1.2+i*.45,-.58,W+.02,TOP+1.3+i*.45,-.5);
+  [-5.2,-.9].forEach(function(x){b.b('dark',x-.06,TOP-.25,-1.0,x+.06,TOP+1.3,-.9);});
+  var st=signTex(['SNS GRAND'],'#8a1f17','#f6f3ec',120,null,'#2a2723'),sm=new THREE.MeshStandardMaterial({map:st,roughness:.5,emissive:0xffffff,emissiveMap:st,emissiveIntensity:.08,side:THREE.DoubleSide});sign.push(sm);
+  var sg=new THREE.PlaneGeometry(8.6,8.6/st.userData.aspect,24,1),pa=sg.attributes.position;for(i=0;i<pa.count;i++){var vx=pa.getX(i);pa.setZ(i,-.55*Math.pow(vx/4.3,2));}sg.computeVertexNormals();
+  var so=new THREE.Mesh(sg,sm);so.position.set(-2.0,TOP+1.55,-.15);so.rotation.set(-.12,0,.07);g.push(so);
+  // side windows along the depth, a forecourt, planters
+  for(k=1;k<=5;k++)sideWins(b,-W-.02,-3,D+2,Y0+k*FH+.7,6,940+k*7,1.6);
+  b.b('pave',-W-.5,0,.6,W+.5,.05,wz-.3);b.b('white',-W-1,0,D,-W-.8,1.2,wz-.3);b.b('white',W+.8,0,D,W+1,1.2,wz-.3);
+  [-4.5,4.5].forEach(function(x){b.b('white',x-.8,0,wz-1.4,x+.8,.55,wz-.6);});palm(b,-5.2,wz-1,7,81);
+}
+/* MRK Duplex: shop, office and parking below, three flats, then a duplex with a double-height hall (plans only; finishes indicative) */
+function bMRK(b,g,P,wz,sign){
+  var i,k,FH=3.2,Y0=.45,W=11.45,D=-13.7,XS=-W+2.8,XF=-3.0;
+  b.b('white',-W-.2,0,D,W+.2,Y0,.4);
+  // ground: stair tower, open parking on stone columns, shop and office glazing
+  b.b('stoneDk',-W,Y0,-4.2,XS,Y0+4*FH+2.6,.25);
+  b.b('cream',-W,Y0,D,W,Y0+FH,D+3.8);
+  [XS+.3,-3.6,3.4].forEach(function(x){b.b('stoneDk',x-.28,Y0,-.55,x+.28,Y0+FH-.25,.0);});
+  b.b('dark',XS,Y0+FH-.3,D+3.8,3.4,Y0+FH-.25,.1);
+  b.b('winD',3.7,Y0,-.12,W-.3,Y0+2.6,-.02);[5.8,8.2,10.2].forEach(function(x){b.b('dark',x-.05,Y0,-.1,x+.05,Y0+2.6,0);});b.b('cream',3.4,Y0,D+3.8,W,Y0+FH,-.15);
+  b.b('charcoal',3.4,Y0+2.6,-.2,W,Y0+FH,.06);
+  // first floor: three flats behind a glass-railed balcony
+  b.b('white',XS,Y0+FH-.25,D,W,Y0+FH,.95);b.b('cream',XS,Y0+FH,D,W,Y0+2*FH,-.1);
+  for(i=0;i<3;i++){var cx=XS+(i+.5)*(W-XS)/3;b.b('door',cx-1.6,Y0+FH,-.14,cx-.7,Y0+FH+2.2,-.06);winR(b,cx-.2,Y0+FH+.9,cx+1.9,Y0+FH+2.2,-.1,{g:lit(960+i),f:'white',m:2});}
+  railX(b,XS,W,Y0+FH,1.0,.9);
+  // the duplex: a white frame round a double-height glass hall and a timber strip
+  b.b('white',XS,Y0+2*FH-.25,D,W,Y0+2*FH,.3);
+  b.b('cream',XF,Y0+2*FH,D,W-.5,Y0+4*FH,-.7);
+  b.b('white',XF-.5,Y0+2*FH-.25,-.7,XF,Y0+4*FH+.45,1.1);b.b('white',W-.5,Y0+2*FH-.25,-.7,W,Y0+4*FH+.45,1.1);b.b('white',XF-.5,Y0+4*FH,-.7,W,Y0+4*FH+.45,1.1);b.b('white',XF-.5,Y0+2*FH-.25,-.7,W,Y0+2*FH+.05,1.1);
+  b.b('wood',XF,Y0+2*FH,-.72,XF+2.6,Y0+4*FH,-.55);b.b('led',XF+2.55,Y0+2*FH,-.56,XF+2.6,Y0+4*FH,-.52);
+  b.b(lit(970),XF+3.0,Y0+2*FH+.1,-.74,W-1.0,Y0+4*FH-.3,-.66);
+  [XF+5.1,XF+7.8,XF+10.5].forEach(function(x){b.b('dark',x-.05,Y0+2*FH+.1,-.7,x+.05,Y0+4*FH-.3,-.6);});b.b('dark',XF+3.0,Y0+3*FH-.1,-.7,W-1.0,Y0+3*FH+.05,-.6);
+  railX(b,XF,W-.5,Y0+2*FH,1.0,.95);
+  // the left end: a room below, the open terrace and pergola above
+  b.b('cream',XS,Y0+2*FH,D,XF-.5,Y0+3*FH,-.9);winR(b,XS+.8,Y0+2*FH+.9,XF-1.3,Y0+2*FH+2.2,-.9,{g:lit(975),f:'white',m:2});
+  b.b('white',XS,Y0+3*FH-.25,D,XF-.5,Y0+3*FH,.2);railX(b,XS,XF-.5,Y0+3*FH,1.0,.1);
+  for(i=0;i<12;i++)b.b('wood',XS+.15+i*.47,Y0+4*FH-.15,-6.5,XS+.3+i*.47,Y0+4*FH+.1,-.4);[-6.3,-.6].forEach(function(z){b.b('wood',XS,Y0+4*FH-.35,z-.1,XF-.5,Y0+4*FH-.15,z+.1);});
+  [XS+.2,XF-.7].forEach(function(x){b.b('white',x-.12,Y0+3*FH,-.5,x+.12,Y0+4*FH-.15,-.3);});
+  b.b('cream',-1.5,Y0+4*FH+.45,-6,1.5,Y0+4*FH+2.6,-2.5);
+  for(k=0;k<4;k++)sideWins(b,W+.02,-2.5,D+1.5,Y0+k*FH+.9,3,980+k*4);
+  // compound wall and three gates
+  plot(b,-W-.8,W+.8,D-.8,wz,[XS+.2,3.4],1.5,'charcoal','white');gateSlats(b,XS+.2,3.4,wz,1.8,'woodDk');
+  b.b('pave',XS+.2,0,.1,3.4,.04,wz-.2);b.b('pave',3.4,0,.1,W,.04,wz-.2);palm(b,W+.2,wz-1.2,7.5,91);
+}
+/* Devanshika Homes: from the site photograph */
+function bDevanshika(b,g,P,wz,sign){
+  var k,FH=3.1,Y0=.35,D=-15,XL=-5.3,XM=.3,XR=5.0,TOP=Y0+3*FH;
+  b.b('dvGrey',XL-.1,0,D,XR+.2,Y0,.25);
+  b.b('dvGrey',XL,Y0,D,XM,TOP+1.5,0);b.b('dvGrey',XM,Y0,D,XR,TOP,-1.8);
+  for(k=1;k<=3;k++){var y=Y0+k*FH;b.b('charcoal',XL-.06,y-.4,-.12,XM,y+.06,.1);b.b('charcoal',XM,y-.4,-1.8,XR+.25,y+.06,.95);}
+  b.b('charcoal',XM-.55,Y0+FH,-.12,XM,Y0+2*FH,.1);b.b('charcoal',XL-.06,TOP+1.3,-.1,XM,TOP+1.55,.12);
+  // windows and timber strips as in the photo
+  winR(b,-4.6,Y0+.9,-2.0,Y0+2.55,0,{g:'winBlue',f:'cream',m:1,t:.1});
+  b.b('wood',XL-.02,Y0+FH+.1,-.02,-4.2,Y0+2*FH-.45,.08);winR(b,-4.1,Y0+FH+.75,-1.9,Y0+FH+2.55,0,{g:'winBlue',f:'cream',m:1,t:.1,tr:.9});
+  winR(b,-4.0,Y0+2*FH+.75,-2.0,Y0+2*FH+2.5,0,{g:'winBlue',f:'cream',m:1,t:.1,tr:.85});b.b('wood',-1.9,Y0+2*FH+.05,-.02,XM-.05,Y0+3*FH-.45,.08);
+  b.b('white',-3.75,TOP+.05,-.02,-2.3,TOP+1.2,.06);g.push(decal(P.X.ganesha,1.2,1.1,-3.02,TOP+.62,.075,null,false));
+  // the right bay: cantilevered balconies with steel rails, over parking on stone-clad columns
+  for(k=1;k<=3;k++){var yb=Y0+k*FH;b.b('dvGrey',XM,yb+.06,.7,XR+.25,yb+.95,.95);b.b('dvGrey',XR,yb+.06,-1.8,XR+.25,yb+.95,.95);
+    [1.1,1.3].forEach(function(dy){b.b('steel',XM+.9,yb+dy-.025,.78,XR+.1,yb+dy+.025,.84);});for(var sx=XM+1;sx<XR;sx+=.9)b.b('steel',sx,yb+.95,.79,sx+.03,yb+1.33,.83);}
+  b.b('door',1.4,Y0+FH,-1.84,2.6,Y0+FH+2.2,-1.76);winR(b,3.0,Y0+FH+.9,4.4,Y0+FH+2.2,-1.8,{g:lit(990),f:'cream'});
+  b.b('door',1.4,Y0+2*FH,-1.84,2.6,Y0+2*FH+2.2,-1.76);winR(b,3.0,Y0+2*FH+.9,4.4,Y0+2*FH+2.2,-1.8,{g:lit(991),f:'cream'});
+  [XM+.5,XR-.3].forEach(function(x){b.b('stoneDk',x-.25,Y0,.2,x+.25,Y0+FH-.4,.7);});
+  b.b('cream',XM,Y0+FH-.62,-1.8,XR,Y0+FH-.4,.9);b.g('down',new THREE.CylinderGeometry(.07,.07,.02,12),2.6,Y0+FH-.63,-.4);
+  signMesh(signTex(['Devanshika Homes'],'#f4f1ea',null,90,'italic 600 90px Georgia, serif'),2.2,3.0,Y0+FH-.17,.97,g,sign,0xfff1d6);
+  // compound wall: a charcoal frame with timber, a panel with three paddles, a slatted grey gate
+  plot(b,XL-.5,XR+.5,D-.6,wz,[.6,XR+.3],1.5,'charcoal','white');
+  b.b('wood',XL-.35,.25,wz+.001,XL+1.2,1.3,wz+.03);b.b('lfWall',XL+1.45,.2,wz+.001,.35,1.3,wz+.03);
+  [-2.9,-1.9,-.9].forEach(function(x){b.b('woodDk',x-.14,.3,wz+.03,x+.14,.9,wz+.05);b.b('woodDk',x-.04,.9,wz+.03,x+.04,1.2,wz+.05);});
+  gateSlats(b,.6,XR+.3,wz,1.75,'greyP');[1.6,3.9].forEach(function(x){b.b('woodDk',x-.3,.4,wz-.1,x+.3,1.5,wz-.06);});
+  b.b('pave',.6,0,.9,XR+.3,.04,wz-.2);
+}
+/* the whole portfolio, placed along the street either side of the story's house */
 var LOTUS_SITES=[
-  {slug:'little-lamb',fn:bChurch,x:-58,z:1,wz:11,grow:[.645,.69]},
+  {slug:'mrk-duplex',fn:bMRK,x:-172.5,z:4,wz:8,grow:[.648,.69]},
+  {slug:'devanshika',fn:bDevanshika,x:-152,z:6,wz:6,grow:[.646,.684]},
+  {slug:'little-flower',fn:bLittleFlower,x:-122,z:3,wz:9,grow:[.644,.692]},
+  {slug:'little-lamb',fn:bChurch,x:-66,z:1,wz:11,grow:[.645,.69]},
   {slug:'santaprasad',fn:bSantaprasad,x:-25.5,z:5,wz:7,grow:[.632,.668]},
   {slug:'jamuna',fn:bJamuna,x:23.9,z:3.5,wz:8.5,grow:[.638,.674]},
-  {slug:'noble',fn:bNoble,x:52,z:0,wz:12,grow:[.65,.695]}
+  {slug:'biradar',fn:bBiradar,x:36,z:4,wz:8,grow:[.642,.678]},
+  {slug:'apple',fn:bApple,x:54,z:1.2,wz:9.2,grow:[.646,.684]},
+  {slug:'noble',fn:bNoble,x:84,z:0,wz:12,grow:[.65,.695]},
+  {slug:'sns-grand',fn:bSNS,x:113,z:0,wz:12,grow:[.652,.698]},
+  {slug:'oxford',fn:bOxford,x:152,z:0,wz:12,grow:[.654,.7]}
 ];
 function buildLotusStreet(world){
   var P=lotusMaterials(),sign=[];S.lotusSign=sign;S.lotusGroups={};S.lotusGlow=S.lotusGlow||[];
@@ -1738,7 +2058,7 @@ function buildMain(){
   add(im(bx(.12,.72,.8,'y'),M.dark,.7,Y,1.9));add(im(bx(.12,.72,.8,'y'),M.dark,2.3,Y,1.9));
   [[.8,1.25],[1.5,1.25],[2.2,1.25],[.8,2.55],[1.5,2.55],[2.2,2.55]].forEach(function(c){add(im(bx(.46,.46,.46,'y'),M.fabric,c[0],Y,c[1]));add(im(bx(.46,.44,.08,'y'),M.fabric,c[0],Y+.46,c[1]+(c[1]<1.9?-.2:.2)));});
   add(im(bx(1.9,.05,.1,'y'),M.brass,1.5,Y+2.05,1.9));add(im(bx(1.8,.02,.06,'y'),M.glow,1.5,Y+2.03,1.9,true));
-  // dog-leg stair: 20 risers of 187.5 mm, 270 mm treads, a landing at the turn, a walnut spine wall between the flights
+  // dog-leg stair with a landing at the turn and a walnut spine wall between the flights
   var RS=.1875,GO=.27,sLen=Math.hypot(9*GO,10*RS),sAng=Math.atan2(10*RS,9*GO);
   for(i=0;i<9;i++)add(im(bx(1.0,.06,GO-.01,'y'),M.stone,5.3,Y+(i+1)*RS-.06,-.4-GO/2-i*GO));
   add(im(bx(2.1,.12,1.03,'y'),M.stone,4.75,Y+10*RS-.12,-3.345));
@@ -1797,16 +2117,17 @@ function buildMain(){
   var dashes=[];for(i=-40;i<=40;i++)dashes.push({x:i*7,y:.025,z:19,st:Math.abs(i)/40});
   R.inst(bx(3,.01,.14),new THREE.MeshStandardMaterial({color:0xd9d4c7,roughness:.8}),dashes,.33,.36,{},world);
   var poles=[],arms=[],heads=[];
-  for(i=-6;i<=6;i++){var lx=i*16+6,st3=Math.abs(i)/6;poles.push({x:lx,z:15.4,st:st3});arms.push({x:lx,y:6.9,z:16.2,st:st3});heads.push({x:lx,y:6.82,z:16.9,st:st3});}
+  for(i=-12;i<=11;i++){var lx=i*16+6,st3=Math.abs(i)/12;if(lx===38||lx===54||lx===-154||lx===118)continue; // keep the views of Villa Biradar and the hospital clear
+  poles.push({x:lx,z:15.4,st:st3});arms.push({x:lx,y:6.9,z:16.2,st:st3});heads.push({x:lx,y:6.82,z:16.9,st:st3});}
   R.inst(new THREE.CylinderGeometry(.07,.1,7,10).translate(0,3.5,0),M.bronze,poles,.34,.366,{cast:true},world);
   R.inst(bx(.08,.08,1.7),M.bronze,arms,.345,.37,{},world);
   R.inst(bx(.24,.08,.55),M.lamp,heads,.345,.37,{},world);
   var stTree=tree('s',3.6,1.7,5),trs=[];
-  for(i=-9;i<=9;i++){var tx2=i*11+5.5;if(Math.abs(tx2)<34)continue;var r1=rnd(i+40),sc1=.85+r1*.35;trs.push({x:tx2,z:24.2,sx:sc1,sy:sc1,sz:sc1,ry:r1*6,u:1,st:Math.abs(i)/9});}
+  for(i=-17;i<=17;i++){var tx2=i*11+5.5;if(Math.abs(tx2)<34)continue;if(tx2>44&&tx2<62)continue;if([-166,-148,-112,121,166].some(function(c){return Math.abs(tx2-c)<9;}))continue;var r1=rnd(i+40),sc1=.85+r1*.35;trs.push({x:tx2,z:24.2,sx:sc1,sy:sc1,sz:sc1,ry:r1*6,u:1,st:Math.abs(i)/17});}
   R.inst(stTree.trunk,M.bark,trs,.345,.378,{cast:true},world);R.inst(stTree.canopy,M.leaf,trs,.345,.378,{cast:true},world);
 
   S.cars=new THREE.Group();world.add(S.cars);S.cars.visible=false;
-  var NC=TIER===1?6:10;S.NC=NC;var RB=THREE.RoundedBoxGeometry;
+  var NC=TIER===1?8:16;S.NC=NC;var RB=THREE.RoundedBoxGeometry;
   S.carBody=new THREE.InstancedMesh(RB?new RB(4.4,.66,1.84,3,.2).translate(0,.62,0):bx(4.4,.66,1.84,'y').translate(0,.29,0),new THREE.MeshStandardMaterial({color:0xffffff,metalness:.6,roughness:.28,envMapIntensity:1.2}),NC);
   S.carTop=new THREE.InstancedMesh(RB?new RB(2.2,.48,1.52,3,.2):bx(2.2,.48,1.52,'y'),new THREE.MeshStandardMaterial({color:0x14181b,metalness:.5,roughness:.08,envMapIntensity:1.6}),NC);
   S.carLit=new THREE.InstancedMesh(bx(.08,.14,.36),M.carLight,NC*4);
@@ -1825,7 +2146,7 @@ function buildMain(){
   var plots=[],cstep=15;
   for(var ix=-12;ix<=12;ix++)for(var iz=-12;iz<=12;iz++){
     var x=ix*cstep+(rnd(ix*31+iz)-.5)*5,z=iz*cstep+(rnd(ix+iz*57)-.5)*5,dist=Math.hypot(x-1,z-2);
-    if(dist<62||dist>185)continue;if(x>-92&&x<78&&z>-30&&z<16)continue;if(z>9&&Math.abs(x)<72)continue;if(z<=9&&dist<88)continue;if(z>-14&&z<18&&Math.abs(x)<74)continue;if(rnd(ix*13+iz*7)<.3)continue;
+    if(dist<62||dist>185)continue;if(x>-196&&x<194&&z>-36&&z<16)continue;if(z>9&&Math.abs(x)<200)continue;if(z<=9&&dist<88)continue;if(z>-14&&z<18&&Math.abs(x)<74)continue;if(rnd(ix*13+iz*7)<.3)continue;
     plots.push({x:x,z:z,dist:dist,r:rnd(ix*7+iz*13)});
   }
   plots.sort(function(a,b){return a.dist-b.dist;});
@@ -1852,7 +2173,7 @@ function buildMain(){
   S.cubeEvery=TIER===3?4:(TIER===2?8:14);S.cubeP=-1;S.cubeDirty=true;
   M.glass.envMap=S.cubeRT.texture;M.water.envMap=S.cubeRT.texture;S.carBody.material.envMap=S.cubeRT.texture;
   S.car1.userData.paint.envMap=S.cubeRT.texture;S.car1.userData.glass.envMap=S.cubeRT.texture;
-  if(S.PM){S.PM.winA.envMap=S.PM.winB.envMap=S.PM.winC.envMap=S.PM.winD.envMap=S.PM.rail.envMap=S.cubeRT.texture;}
+  if(S.PM){['winA','winB','winC','winD','rail','glassBlue','winBlue'].forEach(function(k){S.PM[k].envMap=S.cubeRT.texture;});}
 
 
   /* camera path: [p, position, target, mode]; mode 1 = close range (never rescaled), 2 = rescale around the house */
@@ -1862,7 +2183,7 @@ function buildMain(){
     [.315,[21,3.6,27],[3,2.6,1],0],[.345,[-22,7,26],[-1,3,0],0],[.375,[16,6,30],[7,2.2,0],0],
     [.405,[13,2.4,10.5],[6,2,1],1],[.425,[9.2,2.0,1.0],[5,1.95,1.0],1],[.445,[4.3,2.1,1.0],[-5,1.6,0],1],
     [.47,[2.8,2.35,2.6],[-5,1.5,-.3],1],[.5,[-1.2,2.3,2.4],[3,1.4,-2.6],1],[.525,[2.9,2.35,1.7],[5.0,3.1,-2.9],1],
-    [.56,[2.4,2.3,2.6],[-3,1.6,-2],1],[.6,[2.1,4,22],[1,3.2,0],0],[.645,[-7,9,32],[0,4,0],0],[.7,[30,34,95],[-3,4,0],3],
+    [.56,[2.4,2.3,2.6],[-3,1.6,-2],1],[.6,[2.1,4,22],[1,3.2,0],0],[.645,[-7,9,32],[0,4,0],0],[.7,[36,54,152],[9,4,-2],3],
     [.725,[8,7,36],[0,6,-30],2],[.785,[-6,7.5,38],[0,7,-30],2],[.835,[4,5.5,30],[0,3.8,0],0],
     [.9,[-20,6.5,27],[-1,3.2,0],0],[1,[-24,8,30],[-1,3.4,0],0]
   ];
@@ -1969,7 +2290,7 @@ function updateScene(p,time,vel,stage,OV){
   S.starMat.opacity=night*.9*skyT;if(S.sky)S.sky.visible=skyT>0;
   var horizon=S.tmp.setHex(0xaebccb).lerp(S.tmp2.setHex(0xd9a078),golden);horizon.lerp(S.tmp2.setHex(0x0a1120),night);
   scene.fog.color.copy(S.cVoid).lerp(horizon,skyT);
-  scene.fog.near=lerp(50,lerp(60,40,golden),skyT);scene.fog.far=lerp(130,lerp(480,210,golden),skyT);
+  scene.fog.near=lerp(50,lerp(60,40,golden),skyT);scene.fog.far=lerp(130,lerp(480,210,golden),skyT);if(OV&&OV.fogK){scene.fog.near*=OV.fogK;scene.fog.far*=OV.fogK;}
   M.ground.color.setHex(0x121719).lerp(S.tmp2.setHex(0x3f3d39),skyT);
   S.sun.target.position.copy(OV&&OV.sunT?OV.sunT:S.sunT0);S.sun.target.updateMatrixWorld();
   S.sun.position.copy(S.v2).lerp(S.v1.copy(S.sunDir).multiplyScalar(90).add(S.sun.target.position),skyT);
@@ -1999,7 +2320,7 @@ function updateScene(p,time,vel,stage,OV){
 
   carStep(S.car1,S.path1,p,.355,.385,Math.max(golden,night));
   S.cars.visible=(p>.36||EX.on)&&(!OV||!!OV.cars);
-  if(S.cars.visible){var d=S.dummy,l;for(i=0;i<S.NC;i++){var dir=i%2?1:-1,lane=dir>0?17.6:20.4,sp2=10+rnd(i)*5,xx=((time*sp2+rnd(i+9)*260)%260)-130;if(dir<0)xx=-xx;
+  if(S.cars.visible){var d=S.dummy,l;for(i=0;i<S.NC;i++){var dir=i%2?1:-1,lane=dir>0?17.6:20.4,sp2=10+rnd(i)*5,xx=((time*sp2+rnd(i+9)*420)%420)-210;if(dir<0)xx=-xx;
       var near2=Math.hypot(camera.position.x-xx,camera.position.z-lane)<16?1e-4:1;
       d.rotation.set(0,dir>0?0:Math.PI,0);d.scale.set(near2,near2,near2);d.position.set(xx,0,lane);d.updateMatrix();S.carBody.setMatrixAt(i,d.matrix);
       d.position.set(xx-dir*.3,1.3,lane);d.updateMatrix();S.carTop.setMatrixAt(i,d.matrix);
@@ -2215,7 +2536,7 @@ function buildMaterials(){
   // 2. cement bag and a small heap
   var RB=THREE.RoundedBoxGeometry;
   var bagTex=canvasTex(512,320,function(g,w,h){g.fillStyle='#d9d0bf';g.fillRect(0,0,w,h);g.fillStyle='#8a2a22';g.fillRect(0,0,w,70);g.fillStyle='#f2ebdc';g.font='600 44px Jost, sans-serif';g.fillText('[BRAND]',24,52);
-    g.fillStyle='#1f2a36';g.font='700 92px Jost, sans-serif';g.fillText('OPC 53',24,178);g.font='500 30px Jost, sans-serif';g.fillText('GRADE CEMENT  ·  IS 269',26,226);g.fillStyle='#6b645a';g.font='400 26px Jost, sans-serif';g.fillText('NET 50 kg',26,284);});
+    g.fillStyle='#1f2a36';g.font='700 92px Jost, sans-serif';g.fillText('CEMENT',24,178);g.font='500 30px Jost, sans-serif';g.fillText('STRUCTURAL GRADE',26,226);g.fillStyle='#6b645a';g.font='400 26px Jost, sans-serif';g.fillText('NET 50 kg',26,284);});
   var bag=new THREE.Mesh(RB?new RB(1.25,.32,.8,4,.12):new THREE.BoxGeometry(1.25,.32,.8),new THREE.MeshStandardMaterial({map:bagTex,roughness:.85}));bag.position.set(-.15,.17,0);bag.rotation.y=-.25;bag.castShadow=bag.receiveShadow=renderer.shadowMap.enabled;spins[1].add(bag);
   var heap=new THREE.Mesh(new THREE.ConeGeometry(.38,.28,40),new THREE.MeshStandardMaterial({color:0x9a9994,roughness:1}));heap.position.set(.7,.14,.45);spins[1].add(heap);
   // 3. clay bricks and an AAC block at the same scale
@@ -2232,7 +2553,7 @@ function buildMaterials(){
   var sandG=new THREE.ConeGeometry(.5,.36,48,6),sp3=sandG.attributes.position,v3=new THREE.Vector3();for(i=0;i<sp3.count;i++){v3.fromBufferAttribute(sp3,i);var n2=1+.05*Math.sin(v3.x*18)*Math.cos(v3.z*15);sp3.setXYZ(i,v3.x*n2,v3.y,v3.z*n2);}sandG.computeVertexNormals();
   var sand=new THREE.Mesh(sandG,new THREE.MeshStandardMaterial({color:0xc4ad86,roughness:1}));sand.position.set(.55,.18,.1);spins[3].add(sand);
   // 5. concrete test cubes
-  var cubeTex=canvasTex(256,256,function(g,w,h){g.fillStyle='#a5a39c';g.fillRect(0,0,w,h);for(var q=0;q<2000;q++){g.fillStyle='rgba(60,60,55,'+(rnd(q)*.22)+')';g.fillRect(rnd(q+1)*w,rnd(q+2)*h,1+rnd(q+3)*2,1+rnd(q+4)*2);}g.fillStyle='#1d2a36';g.font='700 56px Jost, sans-serif';g.fillText('M25',60,120);g.font='500 30px Jost, sans-serif';g.fillText('28 DAY',66,170);});
+  var cubeTex=canvasTex(256,256,function(g,w,h){g.fillStyle='#a5a39c';g.fillRect(0,0,w,h);for(var q=0;q<2000;q++){g.fillStyle='rgba(60,60,55,'+(rnd(q)*.22)+')';g.fillRect(rnd(q+1)*w,rnd(q+2)*h,1+rnd(q+3)*2,1+rnd(q+4)*2);}g.fillStyle='#1d2a36';g.font='700 48px Jost, sans-serif';g.fillText('TEST',62,120);g.font='500 30px Jost, sans-serif';g.fillText('CUBE',78,170);});
   var cubeM=new THREE.MeshStandardMaterial({map:cubeTex,roughness:.9});
   [[-.3,.15,0,0],[.12,.15,.1,.3],[-.1,.45,.05,.15]].forEach(function(b){var o=new THREE.Mesh(new THREE.BoxGeometry(.3,.3,.3),cubeM);o.position.set(b[0],b[1],b[2]);o.rotation.y=b[3];o.castShadow=o.receiveShadow=renderer.shadowMap.enabled;spins[4].add(o);});
   var ctx={scene:sc,cam:subCam(),tgt:new THREE.Vector3(),spins:spins,vel:0,fov:MOBILE?46:34};
@@ -2279,60 +2600,112 @@ function setDock(k){var st=ROUTES[ROUTE].steps[k];dock.classList.remove('open');
 
 /* ================= the portfolio: data ================= */
 var WORK=[
-  {slug:'jamuna',name:'Jamuna Residence',type:'Residence',cat:'home',floors:'Stilt + 3 floors',client:'Smt. Jamuna',
+  {slug:'jamuna',kind:'render',name:'Jamuna Residence',type:'Residence',cat:'home',floors:'Stilt + 3',
     img:'assets/work/jamuna',sizes:[720,1229],w:1229,h:1600,
-    line:'Timber, stone and lines of light on a narrow plot.',
-    walk:'A tower of timber and stacked stone carries the stair, split by lines of light under a lit Ganesha. A white frame holds the second-floor balcony.',
-    body:'A stilt-plus-three home. A tower of horizontal timber and stacked stone carries the stair, split by vertical lines of light and crowned by a lit Ganesha. Beside it a white frame holds the second-floor balcony, and every floor opens onto a glass-railed deck under a timber soffit with downlights.',
-    tags:['Timber cladding','Stacked stone','Glass balconies','Light lines']},
-  {slug:'little-lamb',name:'Little Lamb Church',type:'Place of worship',cat:'civic',floors:'Nave with a two-storey annex',place:'Vanasthalipuram, Hyderabad',client:'Little Lamb Church',
-    img:'assets/work/little-lamb',sizes:[1200,2400],w:3359,h:1477,credit:'Perspective by M. A. Mateen Siddiqui',
-    line:'A long nave of pointed arches, and a bell turret with a red cross.',
-    walk:'Pointed arches between stone buttresses, a bell turret with its red cross, and a glazed two-storey annex on the road.',
-    body:'A church on a long frontage. The nave runs between stone-faced buttresses, with tall pointed-arch windows below and a glowing clerestory above. The gabled front carries the great window and a bell turret with its red cross; a corner tower and a glazed two-storey annex close the street front, finished with pinnacles and crosses.',
-    tags:['Nave and annex','Pointed arches','Bell turret','Pinnacles']},
-  {slug:'santaprasad',name:'Santaprasad Residence',type:'Residence',cat:'home',floors:'Ground + 1',place:'Gayatri Nagar, Phase 2',client:'Mr. Santaprasad',
+    line:'Timber, stone and light, stacked on a narrow plot.',
+    walk:'A tower of timber and stone split by lines of light under a lit Ganesha, beside balconies held in a white frame.',
+    body:'A narrow plot turned into a four-level home with real presence. Timber and stacked stone rise as one tower, split by lines of light and crowned with a lit Ganesha, while a white frame holds the balconies beside it. Every level opens to the street behind glass.',
+    tags:['Timber and stone','Light lines','Glass balconies']},
+  {slug:'little-lamb',kind:'render',name:'Little Lamb Church',type:'Place of worship',cat:'civic',floors:'Nave and two-storey hall',
+    img:'assets/work/little-lamb',sizes:[1200,2400],w:3359,h:1477,
+    line:'Pointed arches, a bell turret and a red cross, on a corner plot.',
+    walk:'Pointed arches face the road under a bell turret with its red cross. Round the corner, a glazed hall carries the name under a domed gable.',
+    body:'A church designed for a corner plot, with two fronts that each hold their own. Pointed arches and a bell turret with its red cross face the road; round the corner, a glazed hall with a domed gable carries the name. Towers with pinnacles and crosses tie the two together.',
+    tags:['Corner plot','Pointed arches','Bell turret','Domed gable']},
+  {slug:'santaprasad',kind:'render',name:'Santaprasad Residence',type:'Residence',cat:'home',floors:'Ground + 1',
     img:'assets/work/santaprasad',sizes:[900,1600],w:1600,h:1260,
     line:'A family house boxed in a white frame, under a copper pergola.',
-    walk:'A white frame boxes the first floor: carved timber, louvres, glass and four terracotta fins, under a copper-toned pergola.',
-    body:'A two-storey family house. A white frame boxes the first floor: a timber panel carved with a flowering tree, red louvres, a glass-railed balcony and four terracotta fins. A stacked-stone column anchors the corner, a copper-toned pergola shades the terrace, and slender white columns hold the entrance porch.',
-    tags:['White frame','Carved timber panel','Terracotta fins','Copper pergola']},
-  {slug:'noble',name:'Noble School of Nursing',type:'Institution',cat:'civic',floors:'Ground + 4',client:'Noble School of Nursing',
-    img:'assets/work/noble-drawing',sizes:[1200,2400],w:2400,h:1412,alt:{src:'assets/work/noble-original-2000.webp',w:2000,h:1198,label:'Original drawing'},mainLabel:'Redrawn elevation',
+    walk:'A white frame boxes the first floor: carved timber, louvres, glass and terracotta fins, under a copper-toned pergola.',
+    body:'A family house with a crisp, confident face. A white frame boxes the upper floor around a carved timber panel, louvres, glass and terracotta fins; stacked stone anchors the corner and a copper-toned pergola crowns the terrace.',
+    tags:['White frame','Carved timber','Terracotta fins','Copper pergola']},
+  {slug:'biradar',kind:'model',name:'Villa Biradar',type:'Residence',cat:'home',floors:'Ground + 3',
+    img:'assets/work/biradar',sizes:[720,1200],w:1200,h:1500,credit:'Shown as a view of its 3D model',
+    line:'Grey planes, dark stone and gold lines of light.',
+    walk:'Tall grey panels split by gold lines of light lock into dark stacked stone; the balconies step out in white frames with timber soffits.',
+    body:'A villa that reads as sculpture. Tall grey panels, each split by a gold line of light, lock into a core of dark stacked stone, and the balconies step out in white frames with timber soffits and downlights. At night the whole front is drawn in light.',
+    tags:['Grey panels','Gold light lines','Dark stone','Timber soffits']},
+  {slug:'devanshika',kind:'photo',name:'Devanshika Homes',type:'Residence',cat:'home',floors:'Ground + 2',
+    img:'assets/work/devanshika',sizes:[520,763],w:763,h:1280,credit:'Photographed on site',
+    line:'Grey, charcoal and timber, with a balcony on every floor.',
+    walk:'Charcoal bands, timber strips and a carved Ganesha panel on the left; a cantilevered balcony on every floor on the right, over the parking.',
+    body:'Built and lived in. Charcoal bands frame each floor against light grey plaster, timber strips run beside the windows, and a cantilevered balcony steps out on every level over covered parking. A carved Ganesha panel crowns the front.',
+    tags:['Built','Cantilevered balconies','Timber strips','Ganesha panel']},
+  {slug:'apple',kind:'photo',name:'Apple Hospitals',type:'Hospital',cat:'civic',floors:'Multi-storey',
+    img:'assets/work/apple',sizes:[720,1080],w:1080,h:1010,credit:'Photographed on site',
+    line:'Twin round towers and a stepped arch, built and in use.',
+    walk:'Two round towers with saucer caps flank a stepped arch and a tall fanlit window, under a crown of three loops.',
+    body:'A multi-speciality hospital, built and running. Two round towers with saucer caps flank a stepped arch and a tall fanlit window under a crown of three loops, a front that makes the building a landmark on its road. Behind it sits a complete hospital, wards, diagnostics, an operation theatre and critical care, fitted onto a tight urban plot.',
+    tags:['Built','Round towers','Stepped arch','Theatre and critical care']},
+  {slug:'noble',kind:'model',name:'Noble School of Nursing',type:'Nursing college',cat:'civic',floors:'Ground + 4',
+    img:'assets/work/noble-board',sizes:[1200,2400],w:2400,h:1007,thumb:'assets/work/noble-front',tsizes:[900,1480],tw:1480,th:900,views:[{src:'assets/work/noble-front-1480.webp',w:1480,h:900,label:'Road view'},{src:'assets/work/noble-aerial-872.webp',w:872,h:900,label:'Aerial view'},{src:'assets/work/noble-drawing-2400.webp',w:2400,h:1412,label:'Elevation'}],mainLabel:'Presentation board',
     line:'Five calm floors, eight bays wide.',
     walk:'Eight window bays on every floor, banded floor lines, a patterned parapet and two entrances on a stone plinth.',
-    body:'A teaching block drawn to be calm and easy to run: eight window bays on every floor, framed sills, banded floor lines, a patterned parapet, and two entrances raised on a stone plinth. Shown here as its front elevation, redrawn from the original drawing, which you can also open.',
-    tags:['Institutional','Eight bays','Banded floors','Patterned parapet']}
+    body:'A nursing college designed to be calm, orderly and easy to run: eight bays on every floor, banded floor lines, a patterned parapet and two entrances raised on a stone plinth. Classrooms, labs and hostel are stacked in one clear block.',
+    tags:['Institutional','Eight bays','Banded floors','Patterned parapet']},
+  {slug:'sns-grand',kind:'model',home:false,name:'SNS Grand',type:'Commercial',cat:'commercial',floors:'Stilt + 5',
+    img:'assets/work/sns-grand-board',sizes:[1200,2400],w:2400,h:1007,thumb:'assets/work/sns-grand-front',tsizes:[900,1480],tw:1480,th:900,views:[{src:'assets/work/sns-grand-front-1480.webp',w:1480,h:900,label:'Road view'},{src:'assets/work/sns-grand-aerial-872.webp',w:872,h:900,label:'Aerial view'}],mainLabel:'Presentation board',
+    walk:'Five floors of open halls behind a full-height glass front, a stone-clad stair and lift, and a curved sign on the parapet, over stilt parking.',
+    line:'A glass-fronted commercial block, made to be seen from the main road.',
+    body:'A commercial block made to be seen. A full-height glass front rises over five floors of open, flexible halls, a stone-clad core carries the stair and lift, and a curved sign crowns the top. Parking sits underneath on a stilt floor.',
+    tags:['Commercial','Glass front','Open halls','Stilt parking']},
+  {slug:'mrk-duplex',kind:'model',home:false,name:'MRK Duplex',type:'Residence with shops',cat:'home',floors:'Ground + 3',
+    img:'assets/work/mrk-duplex-board',sizes:[1200,2400],w:2400,h:1007,thumb:'assets/work/mrk-duplex-front',tsizes:[900,1480],tw:1480,th:900,views:[{src:'assets/work/mrk-duplex-front-1480.webp',w:1480,h:900,label:'Road view'},{src:'assets/work/mrk-duplex-aerial-872.webp',w:872,h:900,label:'Aerial view'}],mainLabel:'Presentation board',
+    walk:'A shop, an office and parking below, flats behind a glass balcony, and a duplex with a double-height glass hall and a pergola terrace on top.',
+    line:'Business below, a family home above.',
+    body:'Business below and a family home above, in one building. A shop, an office and parking at street level, flats on the floor above, and a duplex on top with a double-height hall, a home theatre and a pergola terrace, all served by a lift. The facade shown is a 3D design study.',
+    tags:['Duplex','Double-height hall','Lift','Shop and office']},
+  {slug:'oxford',kind:'model',home:false,name:'Oxford School of Nursing',type:'Nursing college',cat:'civic',floors:'Ground + 3',
+    img:'assets/work/oxford-board',sizes:[1200,2400],w:2400,h:1007,thumb:'assets/work/oxford-front',tsizes:[900,1480],tw:1480,th:900,views:[{src:'assets/work/oxford-front-1480.webp',w:1480,h:900,label:'Road view'},{src:'assets/work/oxford-aerial-872.webp',w:872,h:900,label:'Aerial view'}],mainLabel:'Presentation board',
+    walk:'A three-floor college wing with shutters at the road, and a four-floor hostel wing carrying the name.',
+    line:'A nursing college below, its hostel above.',
+    body:'A nursing college and its hostel in one building: teaching, labs and a library below, residential floors above, and an open-air auditorium on the roof of the lower wing.',
+    tags:['College and hostel','Lecture halls and labs','Rooftop auditorium']},
+  {slug:'little-flower',kind:'board',name:'Little Flower School of Nursing',type:'Nursing college',cat:'civic',floors:'Five floors',
+    img:'assets/work/little-flower-board',sizes:[900,1536],w:1536,h:1024,thumb:'assets/work/little-flower-front',tsizes:[968],tw:968,th:362,
+    walk:'Balconies on every floor either side of a stone and glass entrance tower, with the name on top and a black gate at the road.',
+    line:'Balconies on every floor, and an auditorium on top.',
+    body:'A nursing school with a clear, generous plan: halls and labs either side of a central corridor, balconies along the road front, a stone and glass entrance tower carrying the name, and a full-floor auditorium on top.',
+    tags:['Five floors','Labs and halls','Rooftop auditorium']}
 ];
 var WMAP={};WORK.forEach(function(w,i){w.i=i;WMAP[w.slug]=w;});
-var WALK=['little-lamb','santaprasad','jamuna','noble'];
-var LOTUS={phone:'+91 94403 40894',tel:'+919440340894',wa:'919440340894'};
+var WALK=['mrk-duplex','devanshika','little-flower','little-lamb','santaprasad','jamuna','biradar','apple','noble','sns-grand','oxford'];
+var KIND={board:['Presentation board','The presentation board'],render:['Render','The render'],model:['3D model','The model, full size'],photo:['Photograph','The photograph'],drawing:['Drawing','The drawing'],plans:['Plans','The plans'],structure:['Structural drawing','The drawing']};
+var LOTUS={phone:'+91 94403 40894',tel:'+919440340894',wa:'919440340894',email:'nareshamidyala@gmail.com'};
 function pad(n){return (n<10?'0':'')+n;}
 function wSrc(w,s){return w.img+'-'+s+'.webp';}
 function wSet(w){return w.sizes.map(function(s){return wSrc(w,s)+' '+s+'w';}).join(', ');}
+function wT(w){return w.thumb?{src:w.thumb+'-'+w.tsizes[0]+'.webp',set:w.tsizes.map(function(s){return w.thumb+'-'+s+'.webp '+s+'w';}).join(', '),w:w.tw,h:w.th}:{src:wSrc(w,w.sizes[0]),set:wSet(w),w:w.w,h:w.h};}
+function wG(w){return w.kind==='model'&&w.thumb?wT(w):{src:wSrc(w,w.sizes[0]),set:wSet(w),w:w.w,h:w.h};}
 function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function wMeta(w){return w.type+' · '+w.floors;}
 
 ROUTES.portfolio={kick:'Portfolio',title:'A street of our own work.',
   steps:WALK.map(function(sl,k){var w=WMAP[sl];return [pad(k+1),wMeta(w),w.name,w.walk,w.tags];}),
   labels:[
-    [0,'Bell turret and red cross',[-61.5,15.2,2.3]],[0,'Pointed-arch windows',[-70.1,3.9,1.1]],[0,'Corner tower, pinnacles',[-81.2,12.6,2.2]],[0,'Glazed two-storey annex',[-43,2.6,1.8]],
-    [1,'Carved timber panel',[-28.2,6.3,4.95]],[1,'Terracotta fins',[-20.2,6.6,6.3]],[1,'Copper-toned pergola',[-25.5,9.35,4.8]],[1,'Stacked-stone column',[-30.9,3.4,5.35]],
-    [2,'Lit Ganesha motif',[21.38,12.2,3.95]],[2,'Timber with lines of light',[20.15,5.2,3.97]],[2,'Balcony in a white frame',[28.3,7.8,4.95]],[2,'Timber soffit, downlights',[25.9,12.02,4.2]],
-    [3,'Eight bays, five floors',[58.3,9.6,.15]],[3,'Patterned parapet',[53.2,18.7,.15]],[3,'Two entrances on a stone plinth',[50.4,1.6,.4]]
+    [0,'Double-height glass hall',[-168.5,10.05,3.3]],[0,'Pergola over the open terrace',[-178.5,13.25,1]],[0,'Shop, office and parking',[-165,1.8,4]],[0,'Flats behind a glass balcony',[-173.5,4.65,4.9]],
+    [1,'Ganesha panel',[-155.02,10.27,6.08]],[1,'A balcony on every floor',[-149.4,7.05,6.95]],[1,'Timber strips',[-153,7.85,6.08]],[1,'Parking on stone-clad columns',[-151.2,1.5,6.7]],
+    [2,'The name on the tower',[-122,16.5,4.52]],[2,'Balconies on every floor',[-132,7.8,3]],[2,'Stone and glass entrance tower',[-120,9,4.3]],[2,'Black gate, light pillars',[-122,1.6,12]],
+    [3,'Bell turret and red cross',[-81.5,15.3,2.3]],[3,'Pointed arches between buttresses',[-70.7,3.9,1.1]],[3,'Corner tower, pinnacles',[-51.2,11,-1]],[3,'The side front: a glazed hall',[-47.9,2.4,-5.3]],
+    [4,'Carved timber panel',[-28.2,6.3,4.95]],[4,'Terracotta fins',[-20.2,6.6,6.3]],[4,'Copper-toned pergola',[-25.5,9.35,4.8]],[4,'Stacked-stone column',[-30.9,3.4,5.35]],
+    [5,'Lit Ganesha motif',[21.38,12.2,3.95]],[5,'Timber with lines of light',[20.15,5.2,3.97]],[5,'Balcony in a white frame',[28.3,7.8,4.95]],[5,'Timber soffit, downlights',[25.9,12.02,4.2]],
+    [6,'Grey panels, gold light lines',[34.1,11.8,4.47]],[6,'Balconies in a white frame',[39.7,8,5.5]],[6,'Timber soffits, downlights',[37.8,8.6,4.6]],[6,'Up-and-down wall lights',[33.7,2.1,4.3]],
+    [7,'Round towers, saucer caps',[48.7,12.7,5.6]],[7,'Stepped arch, fanlit window',[54,9.3,2.2]],[7,'A crown of three loops',[54,13.4,1.6]],[7,'Tall slit windows',[60.04,7,4.4]],
+    [8,'Eight bays, five floors',[90.3,9.6,.15]],[8,'Patterned parapet',[85.2,18.7,.15]],[8,'Two entrances on a stone plinth',[82.4,1.6,.4]],
+    [9,'Glass front over five floors',[111,10,-.26]],[9,'Curved sign on the parapet',[111,20.3,-.15]],[9,'Stone-clad stair and lift',[117,21.25,-.55]],[9,'Stilt parking below',[109.5,1.6,-.4]],
+    [10,'The college: halls and labs',[140,5.25,0]],[10,'The hostel wing',[168,11.65,0]],[10,'The name on the parapet',[168,13.95,.17]],[10,'Entrance screen',[158,1.8,.04]]
   ],next:['construction','Next: how it stands up']};
 
 /* ================= home: selected work ================= */
 var feedWork=function(){},workRow=$('#work-row'),workTiles=[],wmN=$('#wm-n'),wmBar=$('#wm-bar');
 (function buildWork(){
   if(!workRow)return;
-  var h=WORK.map(function(w,i){var ar=(w.w/w.h).toFixed(4);
-    return '<a class="tile" href="#/portfolio/'+w.slug+'" data-slug="'+w.slug+'" style="--ar:'+ar+'"><div class="ph"><span class="t-badge"><i></i>'+(w.slug==='noble'?'Drawing':'Render')+'</span>'+
-      '<img data-src="'+wSrc(w,w.sizes[0])+'" data-srcset="'+wSet(w)+'" sizes="(max-width:820px) 86vw, 60vw" alt="'+esc(w.name+', '+w.line)+'" decoding="async" width="'+w.w+'" height="'+w.h+'"></div>'+
+  var h=WORK.filter(function(w){return w.home!==false;}).map(function(w,i){var t=wT(w),ar=(t.w/t.h).toFixed(4);
+    return '<a class="tile" href="#/portfolio/'+w.slug+'" data-slug="'+w.slug+'" style="--ar:'+ar+'"><div class="ph"><span class="t-badge"><i></i>'+KIND[w.kind][0]+'</span>'+
+      '<img data-src="'+t.src+'" data-srcset="'+t.set+'" sizes="(max-width:820px) 86vw, 60vw" alt="'+esc(w.name+', '+w.line)+'" decoding="async" width="'+t.w+'" height="'+t.h+'"></div>'+
       '<figcaption><span class="t-n">'+pad(i+1)+'</span><span class="t-name">'+esc(w.name)+'</span><span class="t-meta">'+esc(wMeta(w)+(w.place?' · '+w.place:''))+'</span></figcaption></a>';}).join('');
   h+='<a class="tile cta" href="#/portfolio" style="--ar:.86"><div class="ph"><svg class="street" viewBox="0 0 300 160" fill="none" aria-hidden="true"><g stroke="#c9a56e" stroke-width="1"><path d="M0 150h300"/><path d="M14 150V92h40v58M20 92l14-16 14 16M60 150V110h26v40M100 150V70h40v80M112 70V58h16v12M150 150V96h30v54M190 150V60h28v90M198 60V48M230 150V84h58v66"/></g><g fill="#e2c592"><circle cx="120" cy="100" r="2"/><circle cx="204" cy="80" r="2"/><circle cx="260" cy="110" r="2"/></g></svg>'+
-    '<h3>Walk the street in 3D.</h3><p>All four, modelled from their drawings, side by side at golden hour.</p><span class="go" aria-hidden="true">&#8599;</span></div><figcaption><span class="t-n">&rarr;</span><span class="t-name">The full portfolio</span><span class="t-meta">Renders, drawings and a 3D street</span></figcaption></a>';
-  workRow.innerHTML=h;workTiles=$$('.tile',workRow);root.classList.add('js-work');
+    '<h3>Walk the street in 3D.</h3><p>Eleven of them side by side at golden hour.</p><span class="go" aria-hidden="true">&#8599;</span></div><figcaption><span class="t-n">&rarr;</span><span class="t-name">The full portfolio</span><span class="t-meta">Renders, photographs and a 3D street</span></figcaption></a>';
+  workRow.innerHTML=h;workTiles=$$('.tile',workRow);root.classList.add('js-work');var wmT=$('#wm-t');if(wmT)wmT.textContent=pad(workTiles.length);
   if('IntersectionObserver' in window){var wio=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('shown');wio.unobserve(en.target);}});},{threshold:.18});workTiles.forEach(function(t){wio.observe(t);});}
   else workTiles.forEach(function(t){t.classList.add('shown');});
   if(MOBILE)workRow.addEventListener('scroll',function(){workPar();},{passive:true});
@@ -2347,24 +2720,24 @@ function workPar(){var W=innerWidth;for(var i=0;i<workTiles.length;i++){var r=wo
 /* ================= portfolio route ================= */
 var FTOD='auto',FK=null;
 function folioHTML(){
-  var h='<header class="sub-intro folio-intro"><p class="kick">Portfolio</p><h1>A street of our own work.</h1><p class="lede">Homes, a church and a school from the Lotus drawing board, modelled here from their own drawings and set side by side. Walk the street as the sun goes down, or go straight to the renders.</p>'+
-    '<div class="cta-row"><button class="btn-solid" type="button" data-jump="walk">Walk the street</button><button class="btn-glass glass pill" type="button" data-jump="gal">See every render</button></div>'+
-    '<div class="folio-count"><div><b>10,000+</b><span>projects delivered</span></div><div><b>25+</b><span>years of practice</span></div><div><b>4</b><span>shown here, in 3D</span></div></div>'+
+  var h='<header class="sub-intro folio-intro"><p class="kick">Portfolio</p><h1>A street of our own work.</h1><p class="lede">Hospitals, nursing colleges, a church, commercial blocks and homes, designed and engineered by one practice. Eleven of them stand side by side on this street. Walk it as the sun goes down, or go straight to the renders, photographs and presentation boards.</p><p class="folio-caps">Hospitals · Nursing colleges · Places of worship · Commercial · Homes and villas</p>'+
+    '<div class="cta-row"><button class="btn-solid" type="button" data-jump="walk">Walk the street</button><button class="btn-glass glass pill" type="button" data-jump="gal">See every project</button></div>'+
+    '<div class="folio-count"><div><b>10,000+</b><span>projects delivered</span></div><div><b>25+</b><span>years of practice</span></div><div><b>'+WALK.length+'</b><span>of them on this street, in 3D</span></div></div>'+
     '<span class="hint" style="margin-top:30px">Scroll to walk <i></i></span></header>';
   WALK.forEach(function(sl,k){h+='<section class="sub-step" data-k="'+k+'" aria-label="'+esc(WMAP[sl].name)+'"></section>';});
-  h+='<section class="folio-gal" id="folio-gal" aria-label="Every render"><div class="sec-head"><div><p class="kick">Every render</p><h2 class="h2">Look closer.</h2></div>'+
-    '<div class="filters glass pill" role="group" aria-label="Filter projects"><button class="chip" type="button" data-filter="all" aria-pressed="true">All work</button><button class="chip" type="button" data-filter="home" aria-pressed="false">Homes</button><button class="chip" type="button" data-filter="civic" aria-pressed="false">Institutions and worship</button></div></div>';
-  WORK.forEach(function(w,i){var tall=w.h>w.w;
-    h+='<article class="proj'+(tall?' tall':'')+'" data-cat="'+w.cat+'" data-slug="'+w.slug+'"><figure class="pj-fig" data-open="'+w.slug+'" style="--ar:'+w.w+'/'+w.h+'" role="button" tabindex="0" aria-label="Open '+esc(w.name)+' full size">'+
-      '<img src="'+wSrc(w,w.sizes[0])+'" srcset="'+wSet(w)+'" sizes="(max-width:820px) 92vw, 56vw" alt="'+esc(w.name+', '+w.line)+'" decoding="async" width="'+w.w+'" height="'+w.h+'"></figure>'+
+  h+='<section class="folio-gal" id="folio-gal" aria-label="Every project"><div class="sec-head"><div><p class="kick">Every project</p><h2 class="h2">Look closer.</h2></div>'+
+    '<div class="filters glass pill" role="group" aria-label="Filter projects"><button class="chip" type="button" data-filter="all" aria-pressed="true">All work</button><button class="chip" type="button" data-filter="home" aria-pressed="false">Homes</button><button class="chip" type="button" data-filter="commercial" aria-pressed="false">Commercial</button><button class="chip" type="button" data-filter="civic" aria-pressed="false">Hospitals, schools, worship</button></div></div>';
+  WORK.forEach(function(w,i){var G=wG(w),tall=G.h>G.w;
+    h+='<article class="proj'+(tall?' tall':'')+'" data-cat="'+w.cat+'" data-slug="'+w.slug+'"><figure class="pj-fig" data-open="'+w.slug+'" style="--ar:'+G.w+'/'+G.h+'" role="button" tabindex="0" aria-label="Open '+esc(w.name)+' full size">'+
+      '<img src="'+G.src+'" srcset="'+G.set+'" sizes="(max-width:820px) 92vw, 56vw" alt="'+esc(w.name+', '+w.line)+'" decoding="async" width="'+G.w+'" height="'+G.h+'"></figure>'+
       '<div class="pj-txt"><p class="pj-k"><span>'+pad(i+1)+'</span><span>'+esc(w.type)+'</span></p><h3>'+esc(w.name)+'</h3><p class="pj-line">'+esc(w.line)+'</p><p class="pj-body">'+esc(w.body)+'</p>'+
-      '<dl class="pj-facts">'+facts(w)+'</dl><div class="cta-row"><button class="btn-solid" type="button" data-open="'+w.slug+'">Open full size</button><button class="btn-glass glass pill" type="button" data-walk="'+w.slug+'">See it in 3D</button></div></div></article>';});
+      '<dl class="pj-facts">'+facts(w)+'</dl><div class="cta-row"><button class="btn-solid" type="button" data-open="'+w.slug+'">Open full size</button>'+(WALK.indexOf(w.slug)>=0?'<button class="btn-glass glass pill" type="button" data-walk="'+w.slug+'">See it in 3D</button>':'<a class="btn-glass glass pill" href="#contact">Plan one like it</a>')+'</div></div></article>';});
   h+='</section><section class="folio-end"><div class="glass"><div><p class="kick">Your project</p><h2>Yours could stand on this street next.</h2><p class="lede">Every one of these began as a walk around an empty plot. Tell us about yours and we will walk it with you.</p></div>'+
-    '<div class="cta-row"><a class="btn-solid" href="#contact">Book a site visit</a><a class="btn-glass glass pill" href="tel:'+LOTUS.tel+'">Call '+LOTUS.phone+'</a><button class="btn-glass glass pill" type="button" data-back>Back to the house</button></div></div>'+
-    '<p class="folio-note">Renders and drawings by Lotus Planners &amp; Builders, A. Naresh Kumar. The church perspective is by M. A. Mateen Siddiqui. The 3D street is modelled for this site from those drawings, so proportions are close but not survey-exact.</p></section>';
+    '<div class="cta-row"><a class="btn-solid" href="#contact">Book a site visit</a><a class="btn-glass glass pill" href="tel:'+LOTUS.tel+'">Call '+LOTUS.phone+'</a><a class="btn-glass glass pill" href="mailto:'+LOTUS.email+'">Email us</a><button class="btn-glass glass pill" type="button" data-back>Back to the house</button></div></div>'+
+    '<p class="folio-note">Designs by Lotus Planners &amp; Constructions, A. Naresh Kumar. Apple Hospitals and Devanshika Homes are photographed as built; the 3D street and the presentation boards are modelled for this site, so proportions are indicative. Client details are kept private.</p></section>';
   return h;
 }
-function facts(w){var f=[['Type',w.type],['Floors',w.floors]];if(w.place)f.push(['Location',w.place]);if(w.client)f.push(['For',w.client]);
+function facts(w){var f=[['Type',w.type],[w.floorsLabel||'Floors',w.floors]];if(w.place)f.push(['Location',w.place]);if(w.client)f.push(['For',w.client]);
   return f.map(function(x){return '<div><dt>'+x[0]+'</dt><dd>'+esc(x[1])+'</dd></div>';}).join('');}
 var folioIO=null;
 function folioWire(){
@@ -2384,7 +2757,9 @@ subContent.addEventListener('click',function(e){
 });
 subContent.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('.pj-fig')){e.preventDefault();openCase(e.target.dataset.open,e.target.querySelector('img'));}});
 function folioOV(q,t){
-  if(!FK){FK=[[0,[30,34,95],[-3,4,0],15,300],[.125,[-40,9,44],[-58,7.5,0],10,297],[.375,[-15,6.2,30],[-25.5,5,3],6.5,293],[.625,[34,8,26],[23.9,7,2],3,289],[.875,[71,11,46],[52,9,0],.8,284],[1,[71,11,46],[52,9,0],.8,284]]
+  if(!FK){FK=(function(){var st=[[[-164,8,34],[-172.5,6.5,2],14],[[-146,5,25],[-152,5.5,4],13],[[-112,10,52],[-122,7.5,2],12],[[-18,8,30],[-62,7,-5],11],[[-15,6.2,30],[-25.5,5,3],9],
+      [[34,8,26],[23.9,7,2],7.2],[[35.2,7,30],[36.2,7,3],5.4],[[57,8,33],[54,7,2],3.8],[[103,11,46],[84,9,0],2.4],[[121,10,44],[113,11,-3],1.4],[[150,13,84],[154,6,-4],.6]],n=st.length,o=[[0,[-250,48,100],[-30,4,-8],15,300]];
+      st.forEach(function(k,i){o.push([(i+.5)/n,k[0],k[1],k[2],300-16*i/(n-1)]);});o.push([1,st[n-1][0],st[n-1][1],st[n-1][2],284]);return o;})()
     .map(function(k){return {q:k[0],pos:new THREE.Vector3().fromArray(k[1]),tgt:new THREE.Vector3().fromArray(k[2]),el:k[3],az:k[4]};});S.fPos=new THREE.Vector3();S.fTgt=new THREE.Vector3();S.fSun=new THREE.Vector3();}
   var k=0;while(k<FK.length-2&&q>FK[k+1].q)k++;var A=FK[k],B=FK[k+1],u=eio(seg(q,A.q,B.q));
   S.fPos.lerpVectors(A.pos,B.pos,u);S.fTgt.lerpVectors(A.tgt,B.tgt,u);
@@ -2393,13 +2768,14 @@ function folioOV(q,t){
   var el=lerp(A.el,B.el,u),az=lerp(A.az,B.az,u),wash=.12;
   if(FTOD==='day'){el=44;az=300;}else if(FTOD==='night'){el=-8;az=208;wash=.34;}
   S.fSun.set(S.fTgt.x,2,S.fTgt.z);
-  return {pos:S.fPos,tgt:S.fTgt,fov:S.baseFov,el:el,az:az,lamp:1,vx:0,vy:0,inside:0,cars:true,sunT:S.fSun,dof:S.fPos.distanceTo(S.fTgt),wash:wash};
+  var fk=lerp(2.1,1,eio(seg(q,0,.5/WALK.length)));
+  return {pos:S.fPos,tgt:S.fTgt,fov:S.baseFov,el:el,az:az,lamp:1,vx:0,vy:0,inside:0,cars:true,sunT:S.fSun,dof:S.fPos.distanceTo(S.fTgt),wash:wash,fogK:fk};
 }
 function folioTools(){return '<button class="chip" type="button" data-back>Back to the house</button><button class="chip" type="button" data-ftod="auto" aria-pressed="'+(FTOD==='auto')+'">Golden hour</button><button class="chip" type="button" data-ftod="day" aria-pressed="'+(FTOD==='day')+'">Day</button><button class="chip" type="button" data-ftod="night" aria-pressed="'+(FTOD==='night')+'">Night</button>';}
 subTools.addEventListener('click',function(e){var b=e.target.closest('[data-ftod]');if(!b)return;FTOD=b.dataset.ftod;$$('[data-ftod]',subTools).forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});});
 var dockFig=$('#dock-fig'),dockAct=$('#dock-act');
 function folioDock(k){var w=WMAP[WALK[k]];if(!w)return;
-  dockFig.innerHTML='<img src="'+wSrc(w,w.sizes[0])+'" alt="" decoding="async"><span>'+(w.slug==='noble'?'The drawing':'The render')+' &#8599;</span>';dockFig.dataset.open=w.slug;
+  dockFig.innerHTML='<img src="'+wT(w).src+'" alt="" decoding="async"><span>'+KIND[w.kind][1]+' &#8599;</span>';dockFig.dataset.open=w.slug;
   dockAct.innerHTML='<button class="btn-solid" type="button" data-open="'+w.slug+'">Open full size</button><a class="btn-glass glass pill" href="#contact">Plan one like it</a>';}
 dockFig.addEventListener('click',function(){openCase(dockFig.dataset.open,dockFig.querySelector('img'));});
 dockAct.addEventListener('click',function(e){var o=e.target.closest('[data-open]');if(o)openCase(o.dataset.open,dockFig.querySelector('img'));});
@@ -2409,13 +2785,13 @@ var CASE={on:false,slug:null,i:0,view:0,pushed:false,s:1,x:0,y:0,ts:1,tx:0,ty:0,
 var caseEl=$('#case'),caseStage=$('#case-stage'),caseImgW=$('#case-img'),caseImg=$('#case-img img'),caseSide=$('#case-side'),caseCount=$('#case-count'),caseHint=$('#case-hint');
 if(TOUCH)caseHint.textContent='Pinch to zoom · swipe for the next project';
 function caseSideHTML(w){
-  var views=w.alt?'<div class="case-views" role="group" aria-label="View"><button class="chip" type="button" data-cview="0" aria-pressed="true">'+w.mainLabel+'</button><button class="chip" type="button" data-cview="1" aria-pressed="false">'+w.alt.label+'</button></div>':'';
+  var views=w.views?'<div class="case-views" role="group" aria-label="View"><button class="chip" type="button" data-cview="0" aria-pressed="true">'+w.mainLabel+'</button>'+w.views.map(function(v,k){return '<button class="chip" type="button" data-cview="'+(k+1)+'" aria-pressed="false">'+v.label+'</button>';}).join('')+'</div>':'';
   return '<p class="pj-k"><span>'+pad(w.i+1)+'</span><span>'+esc(w.type)+'</span></p><h2 id="case-title">'+esc(w.name)+'</h2><p class="pj-line">'+esc(w.line)+'</p>'+views+'<p class="pj-body">'+esc(w.body)+'</p>'+
     '<ul class="tags">'+w.tags.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul><dl class="pj-facts" style="margin-bottom:26px">'+facts(w)+'</dl>'+
-    '<div class="cta-row"><button class="btn-solid" type="button" data-cwalk="'+w.slug+'">See it on the 3D street</button><a class="btn-glass glass pill" href="#contact">Start a project like this</a></div>'+
-    '<p class="folio-note">'+(w.credit?esc(w.credit)+'. ':'')+'Design by Lotus Planners &amp; Builders, A. Naresh Kumar.</p>';}
-function setCaseImg(w,v){var big=w.sizes[w.sizes.length-1],src=v&&w.alt?w.alt.src:wSrc(w,MOBILE&&w.sizes[0]>=1000?w.sizes[0]:big);
-  caseImg.classList.remove('ok');caseImg.onload=function(){caseImg.classList.add('ok');};caseImg.alt=w.name+(v?', original drawing':', full size');caseImg.src=src;if(caseImg.complete&&caseImg.naturalWidth)caseImg.classList.add('ok');
+    '<div class="cta-row">'+(WALK.indexOf(w.slug)>=0?'<button class="btn-solid" type="button" data-cwalk="'+w.slug+'">See it on the 3D street</button><a class="btn-glass glass pill" href="#contact">Start a project like this</a>':'<a class="btn-solid" href="#contact">Start a project like this</a>')+'</div>'+
+    '<p class="folio-note">'+(w.credit?esc(w.credit)+'. ':'')+'Design by Lotus Planners &amp; Constructions, A. Naresh Kumar.</p>';}
+function setCaseImg(w,v){var big=w.sizes[w.sizes.length-1],src=v&&w.views?w.views[v-1].src:wSrc(w,MOBILE&&w.sizes[0]>=1000?w.sizes[0]:big);
+  caseImg.classList.remove('ok');caseImg.onload=function(){caseImg.classList.add('ok');};caseImg.alt=w.name+(v&&w.views?', '+w.views[v-1].label.toLowerCase():', full size');caseImg.src=src;if(caseImg.complete&&caseImg.naturalWidth)caseImg.classList.add('ok');
   CASE.ts=1;CASE.tx=0;CASE.ty=0;CASE.s=1;CASE.x=0;CASE.y=0;czApply();}
 function fillCase(w){CASE.i=w.i;CASE.slug=w.slug;CASE.view=0;caseCount.textContent=pad(w.i+1)+' / '+pad(WORK.length);caseSide.innerHTML=caseSideHTML(w);caseSide.scrollTop=0;setCaseImg(w,0);}
 function openCase(slug,srcImg,fromHash){
@@ -2428,7 +2804,7 @@ function openCase(slug,srcImg,fromHash){
 }
 function flyIn(srcImg,w){
   var r=srcImg.getBoundingClientRect();if(r.width<10||r.bottom<0||r.top>innerHeight)return;
-  var wr=caseImgW.getBoundingClientRect(),a=w.alt&&CASE.view?w.alt.w/w.alt.h:w.w/w.h,tw=Math.min(wr.width,wr.height*a),th=tw/a,tl=wr.left+(wr.width-tw)/2,tt=wr.top+(wr.height-th)/2;
+  var wr=caseImgW.getBoundingClientRect(),a=w.views&&CASE.view?w.views[CASE.view-1].w/w.views[CASE.view-1].h:w.w/w.h,tw=Math.min(wr.width,wr.height*a),th=tw/a,tl=wr.left+(wr.width-tw)/2,tt=wr.top+(wr.height-th)/2;
   var c=document.createElement('img');c.className='case-anim';c.src=srcImg.currentSrc||srcImg.src;c.style.cssText='left:'+r.left+'px;top:'+r.top+'px;width:'+r.width+'px;height:'+r.height+'px';document.body.appendChild(c);
   caseImg.style.visibility='hidden';void c.offsetWidth;
   c.style.cssText='left:'+tl+'px;top:'+tt+'px;width:'+tw+'px;height:'+th+'px;border-radius:6px';
@@ -2585,7 +2961,7 @@ var CAPS=[
   {a:.392,b:.43,t:'frame',sub:'door',k:'Arrival',h:'Welcome home.',s:'Walnut doors with full-height brass pulls, under the porch.',box:[[6,.6,0],[6,3.32,2]]},
   {a:.452,b:.492,t:'tags',k:'Interiors, in house',h:'Designed while the columns cured.',s:'Our own studio plans ceilings, light and joinery with the structure.',pins:[[[-5.6,2.3,0],'Walnut media wall'],[[-3.9,2.7,-3.55],'Made-to-measure shelves'],[[-3.4,1.0,-.3],'Marble tables']]},
   {a:.497,b:.545,t:'tags',k:'Interiors, in house',h:'Stone, walnut and warm light.',s:'A dog-leg stone stair with a landing, and an island to gather round.',pins:[[[1.6,1.55,-1.8],'Stone island'],[[4.2,2.9,-1.4],'Floating stone stair'],[[4.75,2.6,-3.3],'Landing at the turn']]},
-  {a:.664,b:.722,t:'pins',sub:'house',k:'The street',h:'It belongs to its street now.',s:'Every neighbour on it is a real Lotus building. Tap one to see it.',pins:[[[-61.5,12.5,2.2],'Little Lamb Church','little-lamb'],[[-25.5,6.5,6.2],'Santaprasad Residence','santaprasad'],[[21.4,12.2,4],'Jamuna Residence','jamuna'],[[37.5,16.5,.3],'Noble School of Nursing','noble']]},
+  {a:.664,b:.722,t:'pins',sub:'house',k:'The street',h:'It belongs to its street now.',s:'Every neighbour on it is a real Lotus building. Tap one to see it.',pins:[[[-51.2,11.5,-1],'Little Lamb Church','little-lamb'],[[-25.5,6.5,6.2],'Santaprasad Residence','santaprasad'],[[21.4,12.2,4],'Jamuna Residence','jamuna'],[[34.1,12.6,4.5],'Villa Biradar','biradar'],[[54,13.6,1.6],'Apple Hospitals','apple'],[[69.5,16.5,.3],'Noble School of Nursing','noble']]},
   {a:.728,b:.782,t:'stat',k:'Projects delivered, and still counting',n:10000,suf:'+',s:''},
   {a:.786,b:.838,t:'stat',k:'Building it the same way for',n:25,suf:'+',s:'years'},
   {a:.862,b:.912,t:'pointer',sub:'house',k:'Handover',h:'A building outlives its builder.',s:'That is why I have never signed off on one I would not live in myself.',P:[[3,8.2,0]]}
@@ -2735,7 +3111,7 @@ document.addEventListener('visibilitychange',function(){ft=[];lastNow=0;});
 function frame(now){
   if(TEST&&gl){var ri=renderer.info.render;S.lastInfo={calls:ri.calls,tris:ri.triangles};renderer.info.reset();}
   if(!MOBILE){cx+=(tx-cx)*.22;cy+=(ty-cy)*.22;cur.style.transform='translate3d('+cx+'px,'+cy+'px,0)';}
-  if(TEST&&window.__ov&&gl){var to=window.__ov;updateScene(to.p||.95,now*.001,0,10,{pos:new THREE.Vector3().fromArray(to.pos),tgt:new THREE.Vector3().fromArray(to.tgt),fov:to.fov||34,el:to.el==null?14:to.el,az:to.az==null?300:to.az,lamp:to.lamp||0,vx:0,vy:0,inside:0,cars:true,sunT:to.sunT?new THREE.Vector3().fromArray(to.sunT):null,dof:to.dof||0});capHide();requestAnimationFrame(frame);return;}
+  if(TEST&&window.__ov&&gl){var to=window.__ov;updateScene(to.p||.95,now*.001,0,10,{pos:new THREE.Vector3().fromArray(to.pos),tgt:new THREE.Vector3().fromArray(to.tgt),fov:to.fov||34,el:to.el==null?14:to.el,az:to.az==null?300:to.az,lamp:to.lamp||0,vx:0,vy:0,inside:0,cars:true,sunT:to.sunT?new THREE.Vector3().fromArray(to.sunT):null,dof:to.dof||0,wash:to.wash});capHide();requestAnimationFrame(frame);return;}
   if(ROUTE){glEl.style.visibility='';subFrame(now);if(gl)adapt(now);requestAnimationFrame(frame);return;}
   if(lenis)lenis.raf(now);
   var raw=clamp(window.scrollY/trackMax,0,1),prev=sp;
@@ -2753,6 +3129,17 @@ addEventListener('resize',function(){measure();if(!gl)return;renderer.setSize(in
   ['construction','materials'].forEach(function(n){var c=ROUTES[n].ctx;if(c){c.cam.aspect=innerWidth/innerHeight;c.cam.updateProjectionMatrix();c.K=camKeys(c.raw,c.fov);}});});
 
 /* ================= loader ================= */
+if(TEST)window.__occl=function(){
+  // for every walk stop, cast rays from the camera at a grid of points on the building's front and report what they hit first
+  var rc=new THREE.Raycaster(),out=[],bb=new THREE.Box3();rc.camera=camera;
+  function vis(o){while(o){if(!o.visible)return false;o=o.parent;}return true;}
+  function owner(o){while(o){for(var k in S.lotusGroups)if(S.lotusGroups[k]===o)return k;if(o.isInstancedMesh&&o.material===S.cityMat)return 'CITY';o=o.parent;}return 'other';}
+  WALK.forEach(function(sl,k){var ov=folioOV((k+.5)/WALK.length,0),from=ov.pos.clone(),g=S.lotusGroups[sl];bb.setFromObject(g);
+    var tally={},n=0;for(var i=0;i<5;i++)for(var j=0;j<4;j++){var p=new THREE.Vector3(lerp(bb.min.x,bb.max.x,(i+.5)/5),lerp(bb.min.y+.5,bb.max.y*.85,(j+.5)/4),g.position.z+.2);
+      var d=p.clone().sub(from),L=d.length();rc.set(from,d.normalize());rc.far=L+1;var h=rc.intersectObjects(scene.children,true).filter(function(x){return x.object.isMesh&&vis(x.object)&&x.object.renderOrder<20;})[0];
+      var w=h?owner(h.object):'none';tally[w]=(tally[w]||0)+1;n++;}
+    out.push(sl+' '+JSON.stringify(tally));});
+  return out;};
 if(TEST)window.__nkDbg=function(){return {route:ROUTE,subsq:SUBSQ,subk:SUBK,cls:root.className,dock:dock.className,labOn:labEls.filter(function(e){return e.on;}).map(function(e){return e.t.textContent;}),nlab:labEls.length,steps:subSteps.length};};
 if(TEST)window.__nkInfo=function(){return gl?JSON.stringify({calls:S.lastInfo&&S.lastInfo.calls,tris:S.lastInfo&&S.lastInfo.tris,pr:renderer.getPixelRatio(),tier:TIER,composer:!!composer,shadows:renderer.shadowMap.enabled}):'nogl';};
 var ldc=$('#ld-count'),ldb=$('#ld-bar'),ld=$('#loader'),ldv=0,built=false,ldLast=performance.now();
@@ -2766,7 +3153,7 @@ Promise.race([Promise.all([document.fonts&&document.fonts.ready?document.fonts.r
   var now=performance.now(),el=now-t0,dt=Math.min(now-ldLast,200),target=built?100:Math.min(88,el/16);ldLast=now;
   ldv+=(target-ldv)*(1-Math.pow(.93,dt/16.7));if(target===100&&ldv>99.5)ldv=100;
   ldc.textContent=String(Math.round(ldv)).padStart(3,'0');ldb.style.transform='scaleX('+(ldv/100)+')';
-  if(ldv<100||el<1500){requestAnimationFrame(tick);return;}
+  if(ldv<100||el<1750){requestAnimationFrame(tick);return;}
   ld.classList.add('done');root.classList.add('ready');started=true;feedWork();if(lenis&&!ROUTE)lenis.start();
   setTimeout(function(){if(ld.parentNode)ld.parentNode.removeChild(ld);},1400);
 })();
